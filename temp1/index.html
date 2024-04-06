@@ -31,6 +31,10 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/master.css">
+    <script>
+        //Globals
+        _ThisCheckBox = null;
+    </script>
 </head>
 
 <body>
@@ -53,9 +57,10 @@
 
 
     <!-- Navbar Start -->
+    <!-- <i class="fa fa-tooth me-2"></i> -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
         <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Besure</h1>
+            <h1 class="m-0 text-primary"></i>Besure</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -111,7 +116,8 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <!-- <img class="w-100" src="img/carousel-1.jpg" alt="Image"> -->
+                    <video autoplay loop class="w-100" src="./video/1076498990-preview.mp4"></video>
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">פתרונות פיננסיים מותאמים אישית לכל צורך</h5>
@@ -180,33 +186,33 @@
                         <form>
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input id="customerNameIN" type="text" class="form-control bg-light border-0" placeholder="שם מלא.." style="height: 55px;">
+                                    <input id="customerNameIN" type="text" class="Sround form-control bg-light border-0" placeholder="שם מלא.." style="height: 55px;">
                                 </div>
 
                                 <div class="col-12 col-sm-6">
-                                    <input id="mobileNumberIN" type="text" class="form-control bg-light border-0" placeholder="מספר נייד.." style="height: 55px;">
+                                    <input id="mobileNumberIN" type="text" class="Sround form-control bg-light border-0" placeholder="מספר נייד.." style="height: 55px;">
                                 </div>
 
 
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="מספר תז כולל ביקורת.." style="height: 55px;">
+                                    <input type="text" class=" Sround form-control bg-light border-0" placeholder="מספר תז כולל ביקורת.." style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="date" id="date1IN" data-target-input="nearest">
                                         <input type="date"
-                                            class="form-control bg-light border-0 datetimepicker-input"
+                                            class="Sround form-control bg-light border-0 datetimepicker-input"
                                             placeholder="תאריך לידה" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="classicWrpr">
-                                        <input  type="checkbox" name="termsServiceIN" id="termsServiceIN">
-                                        <a href="">קראתי את תנאי השימוש</a>
+                                        <input  type="checkbox" class=" termsServiceIN hover" name="termsServiceIN" id="termsServiceIN1">
+                                        <a class="hover useTerms" id="termsServiceIN11" onclick="CloseOpenMe('ModalWrp',true,this)" >קראתי את תנאי השימוש</a>
                                     </div>
 
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-dark w-100 py-3" type="submit">שלח</button>
+                                    <button class="Sround submitBtn btn btn-dark w-100 py-3" type="submit">שלח</button>
                                 </div>
                             </div>
                         </form>
@@ -221,7 +227,7 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-7">
@@ -250,7 +256,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- About End -->
 
 
@@ -258,35 +264,35 @@
 
 
     <!-- Service Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div dir="rtl" class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5 mb-5">
                 <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px;">
                     <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/before.jpg" style="object-fit: cover;">
-                        <img class="position-absolute w-100 h-100" src="img/after.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="img/before.jpg" style="">
+                        <img class="position-absolute w-100 h-100" src="img/after.jpg" style="">
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="section-title mb-5">
-                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Services</h5>
-                        <h1 class="display-5 mb-0">We Offer The Best Quality Dental Services</h1>
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">המוצרים שלנו:</h5>
+                        <h1 class="display-5 mb-0">מציעים מוצרים פיננסים עם השירות הטוב ביותר.</h1>
                     </div>
                     <div class="row g-5">
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
+                        <div class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.6s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-1.jpg" alt="">
+                                <img class="serviceIMG img-fluid" src="img/loan.png" alt="">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Cosmetic Dentistry</h5>
+                                <h5 class="m-0">הלוואה כנגד קרן פנסיה</h5>
                             </div>
                         </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
+                        <div class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.9s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-2.jpg" alt="">
+                                <img class=" serviceIMG img-fluid" src="img/recyclepro.png" alt="">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Dental Implants</h5>
+                                <h5 class="m-0">מיחזור משכנתא</h5>
                             </div>
                         </div>
                     </div>
@@ -295,30 +301,70 @@
             <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-7">
                     <div class="row g-5">
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.3s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-3.jpg" alt="">
+                                <img class="serviceIMG img-fluid" src="img/mortgage.png" alt="">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Dental Bridges</h5>
+                                <h5 class="m-0">משכנתאות</h5>
                             </div>
                         </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
+                        <div class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.6s">
                             <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-4.jpg" alt="">
+                                <img class="serviceIMG img-fluid" src="img/Insuranceportfolio.png" alt="">
                             </div>
                             <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Teeth Whitening</h5>
+                                <h5 class="m-0">בדיקת תיק ביטוח</h5>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-5 service-item wow zoomIn" data-wow-delay="0.9s">
-                    <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
-                        <h3 class="text-white mb-3">Make Appointment</h3>
-                        <p class="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est magna stet eirmod</p>
-                        <h2 class="text-white mb-0">+012 345 6789</h2>
-                    </div>
+                    
+                        <!-- <h3 class="text-white mb-3">מעוניין בבירור על אחד המוצרים ?</h3>
+                        <p class="text-white mb-3">אל תפספס את ההזדמנות שלך וקבע עוד היום שיחזרו אלייך !</p>
+                        <button class="Sround submitBtn btn btn-dark w-100 py-3" type="submit">לחץ כאן לבירור</button> -->
+
+                        <div class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
+                            <h1 class="text-white mb-4">מעוניין לשמוע עוד ?</h1>
+                            <h4 class="text-white mb-4">השאר את הפרטים שלך ונחזור אלייך בהקדם.</h4>
+
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-12 col-sm-6">
+                                        <input id="customerNameIN" type="text" class="Sround form-control bg-light border-0" placeholder="שם מלא.." style="height: 55px;">
+                                    </div>
+    
+                                    <div class="col-12 col-sm-6">
+                                        <input id="mobileNumberIN" type="text" class="Sround form-control bg-light border-0" placeholder="מספר נייד.." style="height: 55px;">
+                                    </div>
+    
+    
+                                    <div class="col-12 col-sm-6">
+                                        <input type="text" class=" Sround form-control bg-light border-0" placeholder="מספר תז כולל ביקורת.." style="height: 55px;">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="date" id="date1IN" data-target-input="nearest">
+                                            <input type="date"
+                                                class="Sround form-control bg-light border-0 datetimepicker-input"
+                                                placeholder="תאריך לידה" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="classicWrpr">
+                                            <input  type="checkbox" class="termsServiceIN hover" name="termsServiceIN" id="termsServiceIN2">
+                                            <a class="hover useTerms" id="termsServiceIN22"  onclick="CloseOpenMe('ModalWrp',true,this)" >קראתי את תנאי השימוש</a>
+                                        </div>
+    
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="Sround submitBtn btn btn-dark w-100 py-3" type="submit">שלח</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    
                 </div>
             </div>
         </div>
@@ -327,7 +373,7 @@
 
 
     <!-- Offer Start -->
-    <div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- <div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
@@ -340,12 +386,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Offer End -->
 
 
     <!-- Pricing Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-5">
@@ -411,28 +457,48 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Pricing End -->
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-primary bg-testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div  class="container-fluid bg-primary bg-testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
                     <div class="owl-carousel testimonial-carousel rounded p-5 wow zoomIn" data-wow-delay="0.6s">
+                        <!-- one item -->
                         <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-1.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita justo dolor et stet lorem kasd dolore lorem ipsum. At lorem lorem magna ut et, nonumy labore diam erat. Erat dolor rebum sit ipsum.</p>
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev1.jpeg" alt="">
+                            <p class="fs-5">הייתי זקוקה לביטוח נסיעות דחוף לפני טיסה לחו"ל. פניתי לסוכנות בי-שור וקיבלתי שירות אדיב ומקצועי. נציגת הסוכנות עזרה לי לבחור את הביטוח המתאים ביותר לצרכים שלי, והכל תוך זמן קצר. אני ממליצה בחום על שירותי הביטוח של בי-שור!</p>
                             <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">Client Name</h4>
+                            <h4 class="text-white mb-0">מיכל אברהם</h4>
                         </div>
+                         <!-- one item -->
                         <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita justo dolor et stet lorem kasd dolore lorem ipsum. At lorem lorem magna ut et, nonumy labore diam erat. Erat dolor rebum sit ipsum.</p>
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev2.jpeg" alt="">
+                            <p class="fs-5">ביטוח הדירה שלי עמד להסתיים, וחיפשתי הצעות מחיר חדשות. פניתי לסוכנות בי-שור וקיבלתי הצעה אטרקטיבית ומשתלמת. נציגת הסוכנות הסבירה לי את כל הפרטים בצורה ברורה וסבלנית, והייתה זמינה לכל שאלה. אני מרוצה מאוד מהשירות שקיבלתי!.</p>
                             <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">Client Name</h4>
+                            <h4 class="text-white mb-0">נועה כהן ביטון</h4>
                         </div>
+                         <!-- one item -->
+                                                  <!-- one item -->
+                        <div class="testimonial-item text-center text-white">
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev3.jpeg" alt="">
+                            <p class="fs-5">לאחר תאונה קלה עם רכבי, פניתי לסוכנות בי-שור כדי לקבל ייעוץ לגבי ביטוח רכב. נציג הסוכנות היה מקצועי ואדיב, ועזר לי להבין את זכויותיי מול חברת הביטוח. אני מודה לו על הסיוע ועל היחס האישי!.</p>
+                            <hr class="mx-auto w-25">
+                            <h4 class="text-white mb-0">יורם לוי</h4>
+                        </div>
+                         <!-- one item -->
+                                                  <!-- one item -->
+                        <div class="testimonial-item text-center text-white">
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev4.jpeg" alt="">
+                            <p class="fs-5">הייתי צריכה ביטוח חיים עבור המשפחה שלי, וחיפשתי סוכנות אמינה שתעזור לי לבחור את הביטוח המתאים ביותר. פניתי לסוכנות בי-שור וקיבלתי שירות מקצועי ויעיל. נציגת הסוכנות ענתה על כל שאלותיי והסבירה לי את כל ההיבטים של ביטוח החיים. אני ממליצה בחום על שירותי הביטוח של בי-שור!.</p>
+                            <hr class="mx-auto w-25">
+                            <h4 class="text-white mb-0">שירלי בן-דויד</h4>
+                        </div>
+                         <!-- one item -->
+             
                     </div>
                 </div>
             </div>
@@ -442,7 +508,7 @@
 
 
     <!-- Team Start -->
-    <div class="container-fluid py-5">
+    <!-- <div class="container-fluid py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
@@ -539,12 +605,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Team End -->
 
 
     <!-- Newsletter Start -->
-    <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+    <!-- <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
         <div class="container">
             <div class="bg-primary p-5">
                 <form class="mx-auto" style="max-width: 600px;">
@@ -555,41 +621,33 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Newsletter End -->
     
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="">
         <div class="container pt-5">
             <div class="row g-5 pt-4">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <h3 class="text-white mb-4">Quick Links</h3>
                     <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>דף הבית</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>פנסיוני</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>הלוואה כנגד קרן פנסיה</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>מיחזור משכנתא</a>
+                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>בדיקת תיק הביטוח</a>
+                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>משכנתאות</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Popular Links</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
+       
+                <div class="col-lg-4 col-md-6">
                     <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>ישראל, הוד השרון, הבנים 14</p>
                     <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@example.com</p>
-                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>051-111111111</p>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <h3 class="text-white mb-4">Follow Us</h3>
                     <div class="d-flex">
                         <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
@@ -605,10 +663,10 @@
         <div class="container">
             <div class="row g-0">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved.</p>
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Besure</a>. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
+                    <p class="mb-0">Designed by <a class="text-white border-bottom" href="https://GiladMeirson.site">Gilad Meirson</a></p>
                 </div>
             </div>
         </div>
@@ -618,6 +676,75 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+
+    <div dir="rtl" id="ModalWrp">
+        <div id="modal">
+            <p onclick="CloseOpenMe('ModalWrp',false)" id="Exit">X</p>
+            <div id="modalContent">
+                <p class="termsofUseText">
+                                                        תקנון טופס השארת פרטים - בי-שור <br>
+
+                                    טופס זה נועד לאפשר לך להשאיר פרטים אישיים לצורך קבלת הצעות מחיר עבור ביטוח. <br>
+                                    פרטים הנדרשים: <br>
+                                    שם מלא <br>
+                                    מספר טלפון <br>
+                                    מספר תעודת זהות <br>
+                                    שימוש בפרטים: <br>
+
+                                    יצירת קשר: <br>
+                                    הפרטים שתספק ישמשו את סוכנות הביטוח בי-שור ("הסוכנות") לצורך יצירת קשר איתך, הצגת הצעות מחיר עבור ביטוח, ומתן שירותי ביטוח. <br>
+
+                                    שיפור השירות: <br>
+                                    הסוכנות עשויה להשתמש בפרטים שתספק לצורך שיפור השירות שלה, ניתוח נתונים סטטיסטיים, ופיתוח מוצרים ושירותים חדשים. <br>
+
+                                    אבטחת מידע: <br>
+
+                                    הסוכנות מתחייבת לשמור על פרטיותך ועל אבטחת המידע שתספק. פרטייך לא יועברו לצד שלישי ללא הסכמתך, אלא במקרים הקבועים בחוק. <br>
+
+                                    הסכמה: <br>
+
+                                    מילוי טופס זה מהווה הסכמה מצידך לתנאים המפורטים בתקנון זה. <br>
+
+                                    זכות ביטול: <br>
+
+                                    בכל עת, תוכל לבקש מהסוכנות למחוק את פרטייך מיד. <br>
+
+                                    שינויים בתקנון:<br>
+
+                                    הסוכנות רשאית לשנות את התקנון מעת לעת. שינויים בתקנון יפורסמו באתר האינטרנט של הסוכנות. <br>
+
+                                    תקנון זה הינו נוסח כללי וניתן להתאימו לצרכים הספציפיים של סוכנות הביטוח. <br>
+                                    תקנון זה מנוסח בלשון זכר אך מיועד לשני המינים. <br>
+                                    הבהרות נוספות:<br>
+                                    אי-אחריות: <br>
+                                    הסוכנות אינה אחראית לנזק שייגרם לך כתוצאה משימוש בשירותי האתר, לרבות כתוצאה משימוש במידע שתספק. <br>
+                                    תחום שיפוט: <br>
+                                    הדין החל על תקנון זה ועל כל עניין הנובע ממנו או הקשור אליו הוא הדין הישראלי. סמכות השיפוט הבלעדית לכל עניין הנובע ממנו או הקשור אליו נתונה לבית המשפט המוסמך בישראל. <br>
+                                    חשוב: <br>
+                                    לפני מילוי טופס השארת פרטים, מומלץ לקרוא את התקנון בעיון.
+                </p>
+                <button onclick="confirmToTerms()" class="Sround submitBtn btn btn-dark w-100 py-3" type="submit">קראתי ואני מאשר</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        
+        const CloseOpenMe=(id,flag,elm)=>{
+            !flag?$(`#${id}`).fadeOut():$(`#${id}`).fadeIn();
+            flag?_ThisCheckBox=elm.parentElement.children[0]:_ThisCheckBox=null;
+            
+        }
+        const confirmToTerms=()=>{
+            $(`#ModalWrp`).fadeOut()
+            _ThisCheckBox!=null?_ThisCheckBox.checked=true:_ThisCheckBox.checked=false;
+
+        }
+    </script>
 
 
     <!-- JavaScript Libraries -->

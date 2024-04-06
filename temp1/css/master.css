@@ -39,10 +39,97 @@ margin-block: 20px;
 
 }
 
-#termsServiceIN{
-    width: 20px;
-    height: 20px;
+.termsServiceIN{
+    width: 18px;
+    height: 18px;
 }
-.classicWrpr{
-    
+.classicWrpr {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.useTerms{
+    margin-inline: 18px;
+    color: black;
+}
+
+.useTerms:hover ,.classicWrpr:hover{
+    color: rgb(234, 234, 106);
+}
+
+.hover:hover{
+    cursor: pointer;
+}
+.Sround{
+    border-radius: 15px;
+}
+.submitBtn{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.submitBtn:hover {
+    background-color: rgb(231, 231, 124);
+    color: black;
+}
+
+.appointment-form {
+    background: rgba(6, 163, 218, .7);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+.bg-appointment {
+    background: linear-gradient(rgba(9, 30, 62, 0.542), rgba(9, 30, 62, 0.662)), url(../img/typing.jpeg) center center no-repeat;
+    background-size: cover;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.serviceIMG{
+    width: 100%;
+    height: 240px
+}
+
+#ModalWrp{
+    position: fixed;
+    top: 10vh;
+    left: 27vw;
+    width: 46vw;
+    z-index: 5;
+    background-color: #dedede;
+    border-radius: 15px;
+    overflow: auto;
+    border: 2px solid rgb(86, 125, 232);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: none;
+
+}
+#modalContent{
+    padding: 15px;
+    padding-bottom: 40px;
+}
+.termsofUseText{
+    font-size: 12px;
+}
+
+#Exit{
+    float: left;
+    margin: 0px;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#Exit:hover{
+    color: red;
+}
+
+div input[type="checkbox"] {
+    accent-color: #3d863f;  
+}
+
+.bg-testimonial {
+    background: url(../img/reviews.png) center center no-repeat;
+    background-size: cover;
+    opacity: 0.7;
 }
