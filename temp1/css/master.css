@@ -1,0 +1,48 @@
+#searchBtn {
+    margin-left: 5%;
+}
+
+.imgNum{
+width: 15%;
+margin-block: 20px;
+}
+
+.d-flex2 {
+    display: flex !important;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bannerimg1 {
+    background-color: #06A3DA !important;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+}
+#bannerimg2 {
+    background-color: #4ab3d8 !important;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+}
+#bannerimg3 {
+    background-color: #89c3d8 !important;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+
+}
+#bannerWrap .bannDivs:hover{
+    background-color: #efc365 !important;
+
+}
+
+#termsServiceIN{
+    width: 20px;
+    height: 20px;
+}
+.classicWrpr{
+    
+}
