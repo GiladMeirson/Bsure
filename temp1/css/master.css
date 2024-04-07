@@ -133,3 +133,13 @@ div input[type="checkbox"] {
     background-size: cover;
     opacity: 0.7;
 }
+
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(9 30 62 / 50%);
+    z-index: 1;
+}
