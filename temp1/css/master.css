@@ -3,7 +3,7 @@
 }
 
 .imgNum{
-width: 15%;
+width: 20%;
 margin-block: 20px;
 }
 
@@ -89,11 +89,13 @@ margin-block: 20px;
     height: 240px
 }
 
-#ModalWrp{
+#ModalWrp {
+    overflow-y: scroll;
     position: fixed;
     top: 10vh;
     left: 27vw;
     width: 46vw;
+    height: 50vh;
     z-index: 5;
     background-color: #dedede;
     border-radius: 15px;
@@ -101,8 +103,29 @@ margin-block: 20px;
     border: 2px solid rgb(86, 125, 232);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     display: none;
-
 }
+
+
+/* Style for the scrollbar */
+#ModalWrp::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+/* Track (the background) */
+#ModalWrp::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the track */
+}
+
+/* Handle (the draggable part) */
+#ModalWrp::-webkit-scrollbar-thumb {
+    background: #88a6bd; /* Color of the thumb */
+}
+
+/* Handle on hover */
+#ModalWrp::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the thumb on hover */
+}
+
 #modalContent{
     padding: 15px;
     padding-bottom: 40px;
@@ -142,4 +165,88 @@ div input[type="checkbox"] {
     bottom: 0;
     background: rgb(9 30 62 / 50%);
     z-index: 1;
+}
+
+.bannDivs {
+    padding-top: 5px !important;
+}
+
+.shadow1{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.container p  li {
+    color: white;
+}
+
+
+.hero-header a:hover {
+    color: #06A3DA !important;
+}
+.hero-header3 a:hover {
+    color: #06A3DA !important;
+}
+.hero-header4 a:hover {
+    color: #06A3DA !important;
+}
+.hero-header5 a:hover {
+    color: #06A3DA !important;
+}
+.hero-header6 a:hover {
+    color: #06A3DA !important;
+}
+p li {
+    text-align: right;
+}
+
+.info strong {
+    font-size: 18px;
+}
+
+.hovercolor:hover{
+    background-color: #f6e989;
+    color: black;
+}
+
+
+.bg-offer {
+    background: linear-gradient(rgba(9, 30, 62, 0.62), rgba(9, 30, 62, 0.585)), url(../img/pensbg2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+.hero-header {
+    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/pensbg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+
+.bg-offer3 {
+    background: linear-gradient(rgba(9, 30, 62, 0.62), rgba(9, 30, 62, 0.585)), url(../img/loan3.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.hero-header3 {
+    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/loan33.jpg) center center no-repeat;
+    background-size: cover;
+}
+.hero-header4 {
+    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/bg66.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+.bg-offer5 {
+    background: linear-gradient(rgba(9, 30, 62, 0.62), rgba(9, 30, 62, 0.585)), url(../img/bg66.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.hero-header5 {
+    background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/loan3.jpg) center center no-repeat;
+    background-size: cover;
 }

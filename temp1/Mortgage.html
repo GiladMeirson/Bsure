@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Besure - משכנתא</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Besure Insurence" name="description">
+
+    <!-- Favicon -->
+    <!-- <link href="img/favicon.ico" rel="icon"> -->
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/master.css">
+    <script>
+        //Globals
+        _ThisCheckBox = null;
+    </script>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary m-1" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+ 
+
+
+    <!-- Navbar Start -->
+    <!-- <i class="fa fa-tooth me-2"></i> -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0 text-primary"><img style="width: 270px;" src="./img/logoBesure.png" alt=""></h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div dir="rtl" class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link ">דף בית</a>
+                <a href="./PensionFund.html" class="nav-item nav-link">קרן פנסיה</a>
+                <a href="./loanVsPension.html" class="nav-item nav-link ">הלוואה כנגד קרן פנסיה </a>
+                <a href="./MortgageCycle.html" class="nav-item nav-link ">מיחזור משכנתא </a>
+                <a href="./Mortgage.html" class="nav-item nav-link active">משכנתא</a>
+                <a href="./insurenceCase.html" class="nav-item nav-link">בדיקת תיק הביטוח</a>
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
+                        <a href="team.html" class="dropdown-item">Our Dentist</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                    </div>
+                </div> -->
+                <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+            </div>
+            <button id="searchBtn" type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
+            <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">תחזרו אלי</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Hedero Start -->
+    <div class="shadow1 container-fluid bg-primary py-5 hero-header5 mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">משכנתא</h1>
+                <a href="./index.html" class="h4 text-white">דף הבית</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="./Mortgage.html" class="h4 text-white">משכנתא</a>
+            </div>
+        </div>
+    </div>
+    <!-- Hedero End -->
+
+
+
+    <!-- Appointment Start -->
+      <div dir="rtl" class="container-fluid bg-primary bg-appointment my-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-6 py-5">
+                    <div class="py-5">
+                        <h1 class="display-5 text-white mb-4">ביטוח חיים למשכנתא: הגנה על המשפחה והבית</h1>
+                        <p class="text-white mb-0">
+                            ביטוח חיים למשכנתא הוא כלי חשוב להגנה על המשפחה והבית. חשוב לבחור את הביטוח המתאים ביותר עבורכם תוך התחשבות בצרכים האישיים שלכם. <br>
+                            אל תזניחו את ביטוח החיים למשכנתא! זהו כלי חשוב להגנה על המשפחה והבית שלכם. <br> <br>
+                            צרו קשר עוד היום עם המומחים שלנו לביטוח לקבלת הצעה אטרקטיבית וייעוץ מקצועי.
+                                           
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
+                        <h1 class="text-white mb-4">השאר את פרטייך ונחזור אלייך</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input id="customerNameIN" type="text" class="Sround form-control bg-light border-0" placeholder="שם מלא.." style="height: 55px;">
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <input id="mobileNumberIN" type="text" class="Sround form-control bg-light border-0" placeholder="מספר נייד.." style="height: 55px;">
+                                </div>
+
+
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class=" Sround form-control bg-light border-0" placeholder="מספר תז כולל ביקורת.." style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="date" id="date1IN" data-target-input="nearest">
+                                        <input type="date"
+                                            class="Sround form-control bg-light border-0 datetimepicker-input"
+                                            placeholder="תאריך לידה" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
+                                            <label style="color: black; font-size: 12px; " for="">תאריך לידה*</label>
+
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="classicWrpr">
+                                        <input  type="checkbox" class=" termsServiceIN hover" name="termsServiceIN" id="termsServiceIN1">
+                                        <a class="hover useTerms" id="termsServiceIN11" onclick="CloseOpenMe('ModalWrp',true,this)" >קראתי את תנאי השימוש</a>
+                                    </div>
+
+                                </div>
+                                <div class="col-12">
+                                    <button class="Sround submitBtn btn btn-dark w-100 py-3" type="submit">שלח פרטים לייעוץ בחינם</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
+
+
+
+
+
+
+
+  
+
+
+
+
+
+    <!-- Offer Start -->
+    <div dir="rtl" class="info container-fluid bg-offer5 my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div   class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
+                    <div  class="shadow1 offer-text text-center rounded p-5">
+                        <h1 class="display-5 text-white">הנה כמה דברים שכדאי לדעת על ביטוח חיים למשכנתא:</h1>
+                        <p style="text-align: right;" class="text-white mb-4">
+                            רכישת דירה היא אבן דרך משמעותית בחייו של כל אדם. 
+                            עבור רבים, מדובר בהגשמת חלום ובהשקעה כלכלית משמעותית. יחד עם ההתרגשות מגיעה גם אחריות גדולה, ובמקרה של משכנתא - התחייבות לטווח ארוך. <br> <br>
+                            <strong>ביטוח חיים למשכנתא נועד להגן על המשפחה והבית במקרה פטירה פתאומית של אחד מבני הזוג.</strong>
+                            ביטוח זה מבטיח שהבנק יקבל את יתרת ההלוואה, ובכך פוטר את בן הזוג שנותר בחיים מהנטל הכלכלי הכבד. <br>
+                            <strong>חובה:</strong>  הבנק ידרש מכם לרכוש ביטוח חיים כתנאי לקבלת משכנתא. <br>
+                            <strong>כיסוי:</strong> סכום הביטוח נקבע בהתאם לגובה ההלוואה. <br>
+                            <strong>עלות:</strong> מחיר הביטוח מושפע מגורמים שונים כמו גיל, מין, מצב בריאותי וסכום הביטוח. <br>
+                            <strong>הטבות מס:</strong> ניתן לקבל החזר מס עבור ביטוח חיים למשכנתא. <br>
+                            <strong>ביטוח מבנה: </strong> מומלץ לרכוש גם ביטוח מבנה למשכנתא, המכסה נזקים לדירה. <br><br>
+                            <strong>להלן כמה טיפים לבחירת ביטוח חיים למשכנתא:</strong> <br>
+                            <strong>השוואת מחירים:</strong> קבלו הצעות מחיר מכמה חברות ביטוח. <br>
+                            <strong>בדיקת תנאים:</strong> שימו לב לכיסוי הביטוח, לתקופת הביטוח ולסייגים. <br>
+                            <strong>התייעצות עם סוכן ביטוח:</strong> סוכן ביטוח מנוסה יוכל לעזור לכם לבחור את הביטוח המתאים ביותר עבורכם. <br> <br>
+                            <strong>אל תזניחו את ביטוח החיים למשכנתא!</strong> זהו כלי חשוב להגנה על המשפחה והבית שלכם. <br> <br>
+
+                            <strong>הטבות נוספות:</strong> חברות ביטוח מסוימות מציעות הטבות נוספות במסגרת ביטוח חיים למשכנתא, כמו שירותי ייעוץ וסיוע <br>
+                            <strong>ביטוח חיים ריסק:</strong> ביטוח חיים ריסק הוא ביטוח זול יותר מביטוח חיים לכל החיים, אך הוא מכסה רק במקרה של מוות. <br>
+                            <strong>ביטוח חיים מותנה: </strong> ביטוח חיים מותנה מכסה רק במקרה של מוות כתוצאה ממחלה קשה או תאונה. <br> <br>
+                            <strong>צרו קשר עוד היום עם המומחים שלנו לביטוח לקבלת הצעה אטרקטיבית וייעוץ מקצועי.</strong>
+
+                        </p>    
+                        <a href="appointment.html" style="border-radius: 10px;" class="shadow1 hovercolor btn btn-dark py-3 px-5 me-3">התייעץ איתנו בחינם !</a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Offer End -->
+
+
+   
+
+
+
+
+
+
+
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="">
+        <div class="container pt-5">
+            <div class="row g-5 pt-4">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-light mb-2" href="./index.html"><i class="bi bi-arrow-right text-primary me-2"></i>דף הבית</a>
+                        <a class="text-light mb-2" href="./PensionFund.html"><i class="bi bi-arrow-right text-primary me-2"></i>פנסיוני</a>
+                        <a class="text-light mb-2" href="./loanVsPension.html"><i class="bi bi-arrow-right text-primary me-2"></i>הלוואה כנגד קרן פנסיה</a>
+                        <a class="text-light mb-2" href="./MortgageCycle.html"><i class="bi bi-arrow-right text-primary me-2"></i>מיחזור משכנתא</a>
+                        <a class="text-light mb-2" href="./insurenceCase.html"><i class="bi bi-arrow-right text-primary me-2"></i>בדיקת תיק הביטוח</a>
+                        <a class="text-light" href="./Mortgage.html"><i class="bi bi-arrow-right text-primary me-2"></i>משכנתאות</a>
+                    </div>
+                </div>
+       
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-4">Get In Touch</h3>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>ישראל, הוד השרון, הבנים 14</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@example.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>051-111111111</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-white mb-4">Follow Us</h3>
+                    <div class="d-flex">
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-light py-4" style="background: #051225;">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Besure</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed by <a class="text-white border-bottom" href="https://GiladMeirson.site">Gilad Meirson</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+
+    <div dir="rtl" id="ModalWrp">
+        <div id="modal">
+            <p onclick="CloseOpenMe('ModalWrp',false)" id="Exit">X</p>
+            <div id="modalContent">
+                <p class="termsofUseText">
+                                                        תקנון טופס השארת פרטים - בי-שור <br>
+
+                                    טופס זה נועד לאפשר לך להשאיר פרטים אישיים לצורך קבלת הצעות מחיר עבור ביטוח. <br>
+                                    פרטים הנדרשים: <br>
+                                    שם מלא <br>
+                                    מספר טלפון <br>
+                                    מספר תעודת זהות <br>
+                                    שימוש בפרטים: <br>
+
+                                    יצירת קשר: <br>
+                                    הפרטים שתספק ישמשו את סוכנות הביטוח בי-שור ("הסוכנות") לצורך יצירת קשר איתך, הצגת הצעות מחיר עבור ביטוח, ומתן שירותי ביטוח. <br>
+
+                                    שיפור השירות: <br>
+                                    הסוכנות עשויה להשתמש בפרטים שתספק לצורך שיפור השירות שלה, ניתוח נתונים סטטיסטיים, ופיתוח מוצרים ושירותים חדשים. <br>
+
+                                    אבטחת מידע: <br>
+
+                                    הסוכנות מתחייבת לשמור על פרטיותך ועל אבטחת המידע שתספק. פרטייך לא יועברו לצד שלישי ללא הסכמתך, אלא במקרים הקבועים בחוק. <br>
+
+                                    הסכמה: <br>
+
+                                    מילוי טופס זה מהווה הסכמה מצידך לתנאים המפורטים בתקנון זה. <br>
+
+                                    זכות ביטול: <br>
+
+                                    בכל עת, תוכל לבקש מהסוכנות למחוק את פרטייך מיד. <br>
+
+                                    שינויים בתקנון:<br>
+
+                                    הסוכנות רשאית לשנות את התקנון מעת לעת. שינויים בתקנון יפורסמו באתר האינטרנט של הסוכנות. <br>
+
+                                    תקנון זה הינו נוסח כללי וניתן להתאימו לצרכים הספציפיים של סוכנות הביטוח. <br>
+                                    תקנון זה מנוסח בלשון זכר אך מיועד לשני המינים. <br>
+                                    הבהרות נוספות:<br>
+                                    אי-אחריות: <br>
+                                    הסוכנות אינה אחראית לנזק שייגרם לך כתוצאה משימוש בשירותי האתר, לרבות כתוצאה משימוש במידע שתספק. <br>
+                                    תחום שיפוט: <br>
+                                    הדין החל על תקנון זה ועל כל עניין הנובע ממנו או הקשור אליו הוא הדין הישראלי. סמכות השיפוט הבלעדית לכל עניין הנובע ממנו או הקשור אליו נתונה לבית המשפט המוסמך בישראל. <br>
+                                    חשוב: <br>
+                                    לפני מילוי טופס השארת פרטים, מומלץ לקרוא את התקנון בעיון.
+                </p>
+                <button onclick="confirmToTerms()" class="Sround submitBtn btn btn-dark w-100 py-3" type="submit">קראתי ואני מאשר</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        
+        const CloseOpenMe=(id,flag,elm)=>{
+            !flag?$(`#${id}`).fadeOut():$(`#${id}`).fadeIn();
+            flag?_ThisCheckBox=elm.parentElement.children[0]:_ThisCheckBox=null;
+            
+        }
+        const confirmToTerms=()=>{
+            $(`#ModalWrp`).fadeOut()
+            _ThisCheckBox!=null?_ThisCheckBox.checked=true:_ThisCheckBox.checked=false;
+
+        }
+    </script>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/twentytwenty/jquery.event.move.js"></script>
+    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
