@@ -24,6 +24,33 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
 
+
+    <!-- /////////////////////////////////////////////// -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"></script>
+        
+
+    <!-- FIREBASE -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script
+        src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+    <!--**** Remember to add the database script ***-->
+    <script
+        src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <!-- FIREBASE -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/FireBaseServer.js"></script>
+    
+
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -118,8 +145,8 @@
                     <video autoplay loop muted  class="w-100" src="./video/bg1.mp4"></video>
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">פתרונות פיננסיים מותאמים אישית לכל צורך</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">שירותים פיננסיים מקצועיים ואמינים, שם כשצריך, תמיד, נותנים לך יותר ביטחון, יותר שלווה</h1>
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">בי שור פתרונות פיננסיים ופנסיונים</h5>
+                            <h1 dir="rtl" class="display-1 text-white mb-md-4 animated zoomIn">מתמחה במתן ייעוץ פיננסי ובכל תחום הפנסיונים והביטוח בישראל.</h1>
                             <!-- <a href="appointment.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
                             <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a> -->
                         </div>
@@ -212,10 +239,9 @@
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="date" id="date1IN" data-target-input="nearest">
-                                        <input type="date"
+                                        <input type="text" onfocus="(this.type='date')"
                                             class="Sround form-control bg-light border-0 datetimepicker-input"
                                             placeholder="תאריך לידה" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
-                                            <label style="color: black; font-size: 12px; " for="">תאריך לידה*</label>
 
                                     </div>
                                 </div>
@@ -299,7 +325,7 @@
                         <h1 class="display-5 mb-0">מציעים מוצרים פיננסים עם השירות הטוב ביותר.</h1>
                     </div>
                     <div class="row g-5">
-                        <div class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.6s">
+                        <div onclick="Href('./loanVsPension.html')" class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.6s">
                             <div class="rounded-top overflow-hidden">
                                 <img class="serviceIMG img-fluid" src="img/loan.png" alt="">
                             </div>
@@ -307,7 +333,7 @@
                                 <h5 class="m-0">הלוואה כנגד קרן פנסיה</h5>
                             </div>
                         </div>
-                        <div class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.9s">
+                        <div onclick="Href('./MortgageCycle.html')" class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.9s">
                             <div class="rounded-top overflow-hidden">
                                 <img class=" serviceIMG img-fluid" src="img/recyclepro.png" alt="">
                             </div>
@@ -321,7 +347,7 @@
             <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-7">
                     <div class="row g-5">
-                        <div class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.3s">
+                        <div onclick="Href('./Mortgage.html')" class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.3s">
                             <div class="rounded-top overflow-hidden">
                                 <img class="serviceIMG img-fluid" src="img/mortgage.png" alt="">
                             </div>
@@ -329,7 +355,7 @@
                                 <h5 class="m-0">משכנתאות</h5>
                             </div>
                         </div>
-                        <div class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.6s">
+                        <div onclick="Href('./insurenceCase.html')" class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.6s">
                             <div class="rounded-top overflow-hidden">
                                 <img class="serviceIMG img-fluid" src="img/Insuranceportfolio.png" alt="">
                             </div>
@@ -489,33 +515,47 @@
                     <div class="owl-carousel testimonial-carousel rounded p-5 wow zoomIn" data-wow-delay="0.6s">
                         <!-- one item -->
                         <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev1.jpeg" alt="">
-                            <p class="fs-5">הייתי זקוקה לביטוח נסיעות דחוף לפני טיסה לחו"ל. פניתי לסוכנות בי-שור וקיבלתי שירות אדיב ומקצועי. נציגת הסוכנות עזרה לי לבחור את הביטוח המתאים ביותר לצרכים שלי, והכל תוך זמן קצר. אני ממליצה בחום על שירותי הביטוח של בי-שור!</p>
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev11.png" alt="">
+                            <p class="fs-5">כשפניתי לבי-שור רציתי לבדוק את תיק הביטוח שלי, פנסיות, משכנתאות ועוד. קיבלתי שירות מקצועי ואדיב, תמונת מצב מקיפה של כל הנכסים הפיננסיים שלי, יחד עם המלצות כיצד לשפר את התיק.
+                                התרשמתי במיוחד מהיחס האישי והליווי לאורך כל התהליך. הצוות היה זמין לכל שאלה, הסביר את כל הדברים בצורה ברורה ופשוטה, ועזר לי לקבל החלטות מושכלות לגבי עתידי הפיננסי.</p>
                             <hr class="mx-auto w-25">
                             <h4 class="text-white mb-0">מיכל אברהם</h4>
                         </div>
                          <!-- one item -->
                         <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev2.jpeg" alt="">
-                            <p class="fs-5">ביטוח הדירה שלי עמד להסתיים, וחיפשתי הצעות מחיר חדשות. פניתי לסוכנות בי-שור וקיבלתי הצעה אטרקטיבית ומשתלמת. נציגת הסוכנות הסבירה לי את כל הפרטים בצורה ברורה וסבלנית, והייתה זמינה לכל שאלה. אני מרוצה מאוד מהשירות שקיבלתי!.</p>
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev22.png" alt="">
+                            <p class="fs-5">לפני שנכנסתי לתהליך של מיחזור משכנתא, רציתי להבין את כל האפשרויות שלי. בי-שור עשו עבודה נהדרת! קיבלתי מהם הצעות מחיר ממספר בנקים שונים, תוך הסבר מפורט על כל מסלול.
+                                בזכות השירות המקצועי שלהם, הצלחתי למצוא את ההצעה הכי טובה עבורי ולחסוך אלפי שקלים בשנה.</p>
                             <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">נועה כהן ביטון</h4>
+                            <h4 class="text-white mb-0">נועה מיטלמן</h4>
                         </div>
                          <!-- one item -->
                                                   <!-- one item -->
                         <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev3.jpeg" alt="">
-                            <p class="fs-5">לאחר תאונה קלה עם רכבי, פניתי לסוכנות בי-שור כדי לקבל ייעוץ לגבי ביטוח רכב. נציג הסוכנות היה מקצועי ואדיב, ועזר לי להבין את זכויותיי מול חברת הביטוח. אני מודה לו על הסיוע ועל היחס האישי!.</p>
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev33.png" alt="">
+                            <p class="fs-5">הייתי צריך הלוואה כנגד קרן הפנסיה שלי, אבל לא ידעתי מאיפה להתחיל. בי-שור סיפקו לי את כל המידע שהייתי צריך, עזרו לי לאורך כל התהליך, והיו זמינים לכל שאלה.
+                                הצוות היה אדיב, מקצועי וסבלני, והצליחו להקל על תהליך מורכב ומסובך. בסופו של דבר, קיבלתי את ההלוואה שהייתי צריך תוך זמן קצר ובלי הרבה בירוקרטיה.</p>
                             <hr class="mx-auto w-25">
                             <h4 class="text-white mb-0">יורם לוי</h4>
                         </div>
                          <!-- one item -->
-                                                  <!-- one item -->
+                        <!-- one item -->
                         <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev4.jpeg" alt="">
-                            <p class="fs-5">הייתי צריכה ביטוח חיים עבור המשפחה שלי, וחיפשתי סוכנות אמינה שתעזור לי לבחור את הביטוח המתאים ביותר. פניתי לסוכנות בי-שור וקיבלתי שירות מקצועי ויעיל. נציגת הסוכנות ענתה על כל שאלותיי והסבירה לי את כל ההיבטים של ביטוח החיים. אני ממליצה בחום על שירותי הביטוח של בי-שור!.</p>
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev44.png" alt="">
+                            <p class="fs-5">לאחר שנים רבות שבהן לא ממש שמתי לב לתיק הביטוח שלי, הבנתי שהגיע הזמן לעשות סדר. פניתי לבי-שור וקיבלתי שירות מעולה.
+                                הצוות היה סבלני ומקצועי, והסביר לי בצורה ברורה ופשוטה את כל מה שצריך לדעת. קיבלתי המלצות מצוינות לגבי שיפור התיק שלי, וכעת אני מרגיש הרבה יותר בטוח לגבי עתידי הפיננסי.</p>
                             <hr class="mx-auto w-25">
                             <h4 class="text-white mb-0">שירלי בן-דויד</h4>
+                        </div>
+                         <!-- one item -->
+
+                        <!-- one item -->
+                        <div class="testimonial-item text-center text-white">
+                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev55.png" alt="">
+                            <p class="fs-5">לפני שרכשתי דירה, רציתי לבדוק את כל האפשרויות שלי לגבי משכנתא. בי-שור עזרו לי להבין את כל האפשרויות שלי, ובהתאם לצרכים שלי, מצאו עבורי את מסלול המשכנתא הכי מתאים.
+                                הצוות היה אדיב, זמין וקשוב, ועשה כל מה שצריך כדי לעזור לי לקבל את ההחלטה הטובה ביותר עבורי. אני ממליץ בחום לכל מי שרוכש דירה להשתמש בשירותי בי-שור.</p>
+                            <hr class="mx-auto w-25">
+                            <h4 class="text-white mb-0">איציק עזרא</h4>
                         </div>
                          <!-- one item -->
              
@@ -663,7 +703,7 @@
        
                 <div class="col-lg-4 col-md-6">
                     <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>ישראל, הוד השרון, הבנים 14</p>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>ישראל, הוד השרון, בני ברית 7</p>
                     <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@example.com</p>
                     <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>051-111111111</p>
                 </div>
@@ -764,8 +804,12 @@
             _ThisCheckBox!=null?_ThisCheckBox.checked=true:_ThisCheckBox.checked=false;
 
         }
-    </script>
 
+        const Href=(url)=>{
+            location.href = url;
+            return;
+        }
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
