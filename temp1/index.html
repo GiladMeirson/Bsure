@@ -49,6 +49,7 @@
 
     <script src="./js/config.js"></script>
     <script src="./js/FireBaseServer.js"></script>
+    <script src="./js/index.js"></script>
     
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -235,11 +236,11 @@
 
 
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class=" Sround form-control bg-light border-0" placeholder="מספר תז כולל ביקורת.." style="height: 55px;">
+                                    <input id="customerID" type="text" class=" Sround form-control bg-light border-0" placeholder="מספר תז כולל ביקורת.." style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="date" id="date1IN" data-target-input="nearest">
-                                        <input type="text" onfocus="(this.type='date')"
+                                        <input id="birthDateIN" type="text" onfocus="(this.type='date')"
                                             class="Sround form-control bg-light border-0 datetimepicker-input"
                                             placeholder="תאריך לידה" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
 
@@ -253,7 +254,7 @@
 
                                 </div>
                                 <div class="col-12">
-                                    <button class="Sround submitBtn btn btn-dark w-100 py-3" type="submit">שלח פרטים לייעוץ בחינם</button>
+                                    <button id="BtnSend1"  class="Sround submitBtn btn btn-dark w-100 py-3">שלח פרטים לייעוץ בחינם</button>
                                 </div>
                             </div>
                         </form>
@@ -378,22 +379,23 @@
                             <form>
                                 <div class="row g-3">
                                     <div class="col-12 col-sm-6">
-                                        <input id="customerNameIN" type="text" class="Sround form-control bg-light border-0" placeholder="שם מלא.." style="height: 55px;">
+                                        <input id="customerNameIN2" type="text" class="Sround form-control bg-light border-0" placeholder="שם מלא.." style="height: 55px;">
                                     </div>
     
                                     <div class="col-12 col-sm-6">
-                                        <input id="mobileNumberIN" type="text" class="Sround form-control bg-light border-0" placeholder="מספר נייד.." style="height: 55px;">
+                                        <input id="mobileNumberIN2" type="text" class="Sround form-control bg-light border-0" placeholder="מספר נייד.." style="height: 55px;">
                                     </div>
     
     
                                     <div class="col-12 col-sm-6">
-                                        <input type="text" class=" Sround form-control bg-light border-0" placeholder="מספר תז כולל ביקורת.." style="height: 55px;">
+                                        <input id="customerID2" type="text" class=" Sround form-control bg-light border-0" placeholder="מספר תז כולל ביקורת.." style="height: 55px;">
                                     </div>
                                     <div class="col-12 col-sm-6">
                                         <div class="date" id="date1IN" data-target-input="nearest">
-                                            <input type="date"
+                                            <input id="birthDateIN2" type="text" onfocus="(this.type='date')"
                                                 class="Sround form-control bg-light border-0 datetimepicker-input"
                                                 placeholder="תאריך לידה" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
+    
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -404,7 +406,7 @@
     
                                     </div>
                                     <div class="col-12">
-                                        <button class="Sround submitBtn btn btn-dark w-100 py-3" type="submit">שלח</button>
+                                        <button id="BtnSend2" class="Sround submitBtn btn btn-dark w-100 py-3" type="submit">שלח</button>
                                     </div>
                                 </div>
                             </form>

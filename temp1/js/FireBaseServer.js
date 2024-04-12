@@ -40,9 +40,7 @@ const Get = async (ref)=>{
 
 
 
-$(document).ready(()=>{
 
-})
 
 
 
