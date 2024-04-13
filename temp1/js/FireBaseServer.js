@@ -19,8 +19,13 @@ const Leads_RefString = 'Besure/Leads';
 
 
 const Post = (refString,obj)=>{
-    ref = firebase.database().ref(refString);
-    ref.push().set(obj);
+    try {
+        ref = firebase.database().ref(refString);
+        ref.push().set(obj);
+    } catch (error) {
+        console.error(error);
+    }
+
 
 
 }

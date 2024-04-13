@@ -49,18 +49,23 @@ const sendLead=(flag)=>{
         const device = isUserMobile()?'mobile':'desktop';
         const status = Status.new;
         const form = document.URL.includes('index')?'index':document.URL.includes('insurenceCase')?'insurenceCase':document.URL.includes('loanVsPension')?'loanVsPension':document.URL.includes('Mortgage')?'Mortgage':document.URL.includes('MortgageCycle')?'MortgageCycle':document.URL.includes('PensionFund')?'PensionFund':'???';
+  
 
         const Lead = {
             name:name,
             phone:phone,
             id:id,
-            birthdateNumber:birthdateNumber,
+            birthdateNumber: isNaN(birthdateNumber)?'לא ידוע':birthdateNumber,
             isConfirmTermsOfUse:isConfirmTermsOfUse,
             from:from,
             device:device,
             status:status,
             form:form,
 
+        }
+        if (form.includes('loanVsPension')) {
+            Lead.loanAmount = $('#loanAmountIN').val();
+            Lead.pensionAmount =$('#pensionAmountIN').val();
         }
         console.log(Lead);
         if (name == '') {
@@ -87,6 +92,7 @@ const sendLead=(flag)=>{
             });
             return
         }
+     
 
         Post(Leads_RefString,Lead);
 
@@ -105,7 +111,7 @@ const sendLead=(flag)=>{
             name:name,
             phone:phone,
             id:id,
-            birthdateNumber:birthdateNumber,
+            birthdateNumber: isNaN(birthdateNumber)?'לא ידוע':birthdateNumber,
             from:from,
             device:device,
             status:status,
