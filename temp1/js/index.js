@@ -4,6 +4,11 @@ const Status ={
     sold:'סגור'
 }
 
+const StringToConfig = {
+    indexUrl : `https://giladmeirson.github.io/Bsure/temp1/`,
+}
+
+
 $(document).ready(()=>{
         const user = {
         From:document.referrer,
@@ -48,7 +53,7 @@ const sendLead=(flag)=>{
         const from = document.referrer==''?'direct':document.referrer;
         const device = isUserMobile()?'mobile':'desktop';
         const status = Status.new;
-        const form = (document.URL.includes('index')||document.URL=='https://giladmeirson.github.io/Bsure/temp1/') ?'index':document.URL.includes('insurenceCase')?'insurenceCase':document.URL.includes('loanVsPension')?'loanVsPension':document.URL.includes('Mort&&gage')?'Mortgage':document.URL.includes('MortgageCycle')?'MortgageCycle':document.URL.includes('PensionFund')?'PensionFund':'???';
+        const form = (document.URL.includes('index')||document.URL==StringToConfig.indexUrl) ?'index':document.URL.includes('insurenceCase')?'insurenceCase':document.URL.includes('loanVsPension')?'loanVsPension':document.URL.includes('Mort&&gage')?'Mortgage':document.URL.includes('MortgageCycle')?'MortgageCycle':document.URL.includes('PensionFund')?'PensionFund':'???';
         
 
         const Lead = {
