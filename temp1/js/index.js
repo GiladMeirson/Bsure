@@ -56,7 +56,6 @@ const sendLead=(flag)=>{
             phone:phone,
             id:id,
             birthdateNumber: isNaN(birthdateNumber)?'לא ידוע':birthdateNumber,
-            isConfirmTermsOfUse:isConfirmTermsOfUse,
             from:from,
             device:device,
             status:status,
