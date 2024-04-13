@@ -45,11 +45,11 @@ const sendLead=(flag)=>{
         const id = $('#customerID').val();
         const birthdateNumber = new Date($('#birthDateIN').val()).getTime();
         const isConfirmTermsOfUse = document.getElementById('termsServiceIN1').checked;
-        const from = document.referrer;
+        const from = document.referrer==''?'direct':document.referrer;
         const device = isUserMobile()?'mobile':'desktop';
         const status = Status.new;
         const form = (document.URL.includes('index')||document.URL=='https://giladmeirson.github.io/Bsure/temp1/') ?'index':document.URL.includes('insurenceCase')?'insurenceCase':document.URL.includes('loanVsPension')?'loanVsPension':document.URL.includes('Mortgage')?'Mortgage':document.URL.includes('MortgageCycle')?'MortgageCycle':document.URL.includes('PensionFund')?'PensionFund':'???';
-  
+        
 
         const Lead = {
             name:name,
