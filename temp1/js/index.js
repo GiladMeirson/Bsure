@@ -166,17 +166,21 @@ const sendLead=(flag)=>{
 
 const SendLeadToEmail = (lead) =>{
     const space = ' ';
-    const lineBreak = '\n';
-    let str = `<h1>היי אביצח יש לך ליד חדש</h1> ${lineBreak}`;
+    const lineBreak = '<br>';
+
+
+    let str = `<div style="text-align: center;" dir="rtl">`
+    str += `<h1>היי אביצח יש לך ליד חדש</h1> ${lineBreak}`;
     str+=`להלן הפרטים של הליד: ${lineBreak}`;
-    str+=`<p>
+    str+=`<p style="font-size:18px;">
     שם מלא: ${lead.name} ${lineBreak}
     מס טלפון: ${lead.phone} ${lineBreak}
     מעוניין ב: ${lead.form} ${lineBreak}${lineBreak}
     היכנס לדף הניהול שלך כדי לראות את שאר הפרטים
     </p>
-    <a href="https://giladmeirson.github.io/manageAvitzah/manage/pages/manageIndex.html" >לעבור לדף ניהול לחץ כאן</a>
+    <a style="font-size:22px;"  href="https://giladmeirson.github.io/manageAvitzah/manage/pages/manageIndex.html" >לעבור לדף ניהול לחץ כאן</a>
     <p>סוף הודעה.</p>`;
+    str+=`</div>`
     sendEmail(BesureEmail,'אביצח יש לך ליד חדש',str);
 
  
