@@ -8,6 +8,7 @@ const StringToConfig = {
     indexUrl : `https://giladmeirson.github.io/Bsure/temp1/`,
 }
 
+const BesureEmail = `besure360@gmail.com`;
 
 $(document).ready(()=>{
         const user = {
@@ -71,7 +72,7 @@ const sendLead=(flag)=>{
             Lead.loanAmount = $('#loanAmountIN').val();
             Lead.pensionAmount =$('#pensionAmountIN').val();
         }
-        console.log(Lead);
+        //console.log(Lead);
         if (name == '') {
             Swal.fire({
                 icon: "error",
@@ -99,6 +100,8 @@ const sendLead=(flag)=>{
      
 
         Post(Leads_RefString,Lead);
+        SendLeadToEmail(Lead);
+
 
     }
     else if (flag==2) {
@@ -122,7 +125,7 @@ const sendLead=(flag)=>{
             form:form,
             
         }
-        console.log(Lead);
+        //console.log(Lead);
         if (name == '') {
             Swal.fire({
                 icon: "error",
@@ -148,6 +151,7 @@ const sendLead=(flag)=>{
             return
         }
         Post(Leads_RefString,Lead);
+        SendLeadToEmail(Lead);
 
     }
 
@@ -160,10 +164,47 @@ const sendLead=(flag)=>{
     
 }
 
+const SendLeadToEmail = (lead) =>{
+    const space = ' ';
+    const lineBreak = '\n';
+    let str = `<h1>היי אביצח יש לך ליד חדש</h1> ${lineBreak}`;
+    str+=`להלן הפרטים של הליד: ${lineBreak}`;
+    str+=`<p>
+    שם מלא: ${lead.name} ${lineBreak}
+    מס טלפון: ${lead.phone} ${lineBreak}
+    מעוניין ב: ${lead.form} ${lineBreak}${lineBreak}
+    היכנס לדף הניהול שלך כדי לראות את שאר הפרטים
+    </p>
+    <a href="https://giladmeirson.github.io/manageAvitzah/manage/pages/manageIndex.html" >לעבור לדף ניהול לחץ כאן</a>
+    <p>סוף הודעה.</p>`;
+    sendEmail(BesureEmail,'אביצח יש לך ליד חדש',str);
+
+ 
+
+}
+
+
+function sendEmail(To,Subject,Body) {
 
 
 
 
+    Email.send({
+        SecureToken:'9512cd3e-b42e-4791-8bb0-7294b2bc2dfb',
+        To: To,
+        From: "gilad.meirson@gmail.com",
+        Subject: Subject,
+        Body:Body,
+    }).then(
+        //message =>swal("The message sent successfully!", "I will answer soon..", "success")
+        alert('succses')
+    );
+
+  
+
+
+
+}
 
 
 
@@ -180,3 +221,4 @@ function validatePhoneNumber(phoneNumber) {
     // Test the input phoneNumber against the pattern
     return pattern.test(phoneNumber);
 }
+
