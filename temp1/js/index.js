@@ -196,8 +196,7 @@ function sendEmail(To,Subject,Body) {
         Subject: Subject,
         Body:Body,
     }).then(
-        //message =>swal("The message sent successfully!", "I will answer soon..", "success")
-        alert('succses')
+       
     );
 
   
