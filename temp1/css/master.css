@@ -238,7 +238,10 @@ p li {
 }
 
 
-
+/* .carousel-caption h1 {
+    font-size: 28px;
+    font-weight: 600 !important;
+} */
 
 
 .bg-offer5 {
@@ -250,3 +253,10 @@ p li {
     background: linear-gradient(rgba(9, 30, 62, .85), rgba(9, 30, 62, .85)), url(../img/loan3.jpg) center center no-repeat;
     background-size: cover;
 }
+
+
+
+.display-1 {
+    font-size: 3.6rem;
+}
+

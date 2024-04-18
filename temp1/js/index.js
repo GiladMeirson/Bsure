@@ -158,7 +158,19 @@ const sendLead=(flag)=>{
     Swal.fire({
         icon:'success',
         title:'נשלח',
-        text:'פרטייך נשלחו בהצלחה, נציג מומחה יחזור אלייך'
+        text:'פרטייך נשלחו בהצלחה , נציגנו יחזרו אלייך.'
+    }).then(()=>{
+        $('#customerNameIN2').val('');
+        $('#mobileNumberIN2').val(''); 
+        $('#customerID2').val('');
+        document.getElementById('birthDateIN2').type='text'
+        $('#birthDateIN2').val('');
+
+        $('#customerNameIN').val('');
+        $('#mobileNumberIN').val(''); 
+        $('#customerID').val('');
+        document.getElementById('birthDateIN').type='text'
+        $('#birthDateIN').val('')
     })
 
     
