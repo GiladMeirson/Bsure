@@ -63,7 +63,7 @@ margin-block: 20px;
     cursor: pointer;
 }
 .Sround{
-    border-radius: 15px;
+    border-radius: 15px !important;
 }
 .submitBtn{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -93,8 +93,8 @@ margin-block: 20px;
     overflow-y: scroll;
     position: fixed;
     top: 10vh;
-    left: 27vw;
-    width: 46vw;
+    left: 15vw;
+    width: 70vw;
     height: 50vh;
     z-index: 5;
     background-color: #dedede;
@@ -263,4 +263,21 @@ p li {
 
 html,body {
     overflow-x: hidden;
+}
+
+
+.aboutus{
+    background-image: url(../img/aboutus2.jpeg);
+    background-size: cover;
+    opacity: 1;
+    background-color: #ffffffc7;
+}
+
+
+.text-primary2 {
+    color: #2029a7 !important;
+}
+
+.text-body2 {
+    color: #122e81 !important;
 }
