@@ -76,7 +76,7 @@ const sendLead=(flag)=>{
         if (name == '') {
             Swal.fire({
                 icon: "error",
-                title: "שגיאה",
+                title: "..רגע",
                 text: "לא הזנתם את שמכם, כדי לשלוח בקשה יש להשלים את השם המלא שלכם.",
             });
             return
@@ -84,7 +84,7 @@ const sendLead=(flag)=>{
         if (phone=='' || !validatePhoneNumber(phone)) {
             Swal.fire({
                 icon: "error",
-                title: "שגיאה",
+                title: "..רגע",
                 text: "כדי שנוכל לחזור אליכם יש להזין מספר טלפון תקין.",
             });
             return
@@ -92,7 +92,7 @@ const sendLead=(flag)=>{
         if (!isConfirmTermsOfUse) {
             Swal.fire({
                 icon: "error",
-                title: "שגיאה",
+                title: "..רגע",
                 text: "עליכם להסכים לתנאי השימוש באתר, ללא הסכמה לא נוכל להמשיך בתהליך.",
             });
             return
