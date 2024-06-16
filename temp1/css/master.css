@@ -299,3 +299,26 @@ html,body {
 .text-body2 {
     color: #122e81 !important;
 }
+
+
+
+
+#bannerimg3 {
+    background-color: #232d41 !important;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+#bannerimg2 {
+    background-color: #232d41 !important;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+
+#bannerimg1 {
+    background-color: #232d41 !important;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
