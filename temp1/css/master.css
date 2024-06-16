@@ -185,6 +185,19 @@ div input[type="checkbox"] {
     color: white;
 }
 
+div #imgvid {
+    width: 80% !important;
+    text-align: center;
+    height: 80% !important;
+    margin: auto;
+    align-self: center;
+    margin-inline: 9.5%;
+    margin-block: 10px;
+}
+
+#h3Font {
+    font-size: 18px;
+}
 
 .hero-header a:hover {
     color: #06A3DA !important;
