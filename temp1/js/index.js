@@ -4,6 +4,8 @@ const Status ={
     sold:'סגור'
 }
 
+let speakFlag = true;
+
 const StringToConfig = {
     indexUrl : `https://giladmeirson.github.io/Bsure/temp1/`,
 }
@@ -27,6 +29,8 @@ $(document).ready(()=>{
         e.preventDefault();
         sendLead(2);
     })
+
+    disableService();
 })
 
 
@@ -237,3 +241,69 @@ function validatePhoneNumber(phoneNumber) {
     return pattern.test(phoneNumber);
 }
 
+
+
+
+
+
+
+
+const disableService=()=>{
+    const img = document.createElement('img');
+    img.src = `./img/disability.png`;
+    if (innerWidth>=450) {
+        img.style.width='5%';
+        //img.style.height='100%';
+        img.style.position='fixed';
+        img.style.top='9%';
+        img.style.right='0.5%';
+        img.style.zIndex='100';
+        img.style.cursor='pointer';
+    }
+    else{
+        img.style.width='12%';
+        //img.style.height='100%';
+        img.style.position='fixed';
+        img.style.top='9%';
+        img.style.right='1.5%';
+        img.style.zIndex='100';
+        img.style.cursor='pointer';
+
+    }
+
+    img.onclick=speakingDisable
+    document.body.appendChild(img);
+
+
+}
+
+
+function speakingDisable(){
+
+    if (speakFlag) {
+        let strToRead = document.body.textContent;
+        while(strToRead.includes('\n')){
+            strToRead = strToRead.replace('\n',' ');
+        }
+        let charToStart= strToRead.indexOf('Q');
+        strToRead = strToRead.slice(0,charToStart);
+        //console.log(strToRead);
+        speak(strToRead,()=>{
+            
+        });
+    }
+    else{
+        window.speechSynthesis.cancel();
+    }
+    speakFlag = !speakFlag;
+
+}
+
+
+function speak(text,cb) {
+    var msg = new SpeechSynthesisUtterance();
+    msg.text = text;
+    msg.volume = 1;
+    msg.onend = cb;
+    window.speechSynthesis.speak(msg);
+}
