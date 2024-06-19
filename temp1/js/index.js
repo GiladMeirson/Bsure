@@ -287,13 +287,25 @@ function speakingDisable(){
         }
         let charToStart= strToRead.indexOf('Q');
         strToRead = strToRead.slice(0,charToStart);
+        strToRead = strToRead.replaceAll('Loading...','')
+        strToRead = strToRead.split(' ')
+        strToRead = strToRead.filter(word => word.trim() !== '').join(' ');
         //console.log(strToRead);
-        speak(strToRead,()=>{
-            
-        });
+        
+        let str = `Pension fund home page Loan against pension fund Mortgage recycling Mortgage Inspection of the insurance portfolio You will come back to me no more unnecessary payments, only smart solutions. The first step to your security on the Internet. Contact us today for a free consultation! Fill in your details and you will talk to a B-shore representative. Contact us today for a free consultation! Smart insurance solutions Save money and get the best coverage. We know that insurance can be an expensive business. Therefore, we offer you smart insurance solutions that will allow you to save money and get the best coverage. Maximum exercise of your rights Professional insurance portfolio review. We offer you a professional insurance portfolio review service, which will allow you to make sure you are getting the best coverage. Our team of experts will examine your insurance portfolio and provide you with a solution that is suitable for you. Is your future important to you? Want to ensure yourself and your family the best financial security? We are here to help you plan your insurance correctly, to suit your needs and desires. Our team of experts will accompany you throughout the entire process, explain the various options and help you choose the most suitable insurance for you. Peace of mind: personalized insurances for every need. We believe that everyone needs personalized insurance that will fit their needs and budget. We are available for any question or request. Contact us today and a representative will get back to you as soon as possible. We are here to help you secure your future! Leave your details and we will get back to you I have read the terms of use Send details for a free consultation Insurance is the most important investment you will make in your life. Do not compromise your security - choose us! Our products: offer pension and financial products with the best service. Loan against a pension fund, mortgage recycling, mortgages, checking an insurance portfolio, interested in hearing more? Leave your details and we will get back to you soon. I have read the terms of use Submit Who are we? Your personal advice for financial success Your partners for financial security Here at B-Shore, we are committed to providing you with the most professional and advanced financial and pension services. Our team of experts includes experienced consultants with broad knowledge and a deep understanding of the financial field, who make every effort to adapt the most appropriate solutions to your personal and business needs. We accompany our clients at every stage, from initial financial advice to comprehensive pension planning, with the aim of ensuring a secure and stable financial future. Come be part of our family and enjoy the peace of mind that comes with intelligent and personalized financial planning. Thousands of satisfied customers the best service we are here 24/7 at the best price contact us I needed a loan against my pension fund, but I didn't know where to start. B-shore provided me with all the information I needed, helped me throughout the process, and were available for any questions. The staff was kind, professional and patient, and managed to facilitate a complex and complicated process. In the end, I got the loan I needed in a short time and without much bureaucracy. Yoram Levy After many years in which I didn't really pay attention to my insurance portfolio, I realized that it was time to put things in order. I contacted Bi-Shor and received excellent service. The staff was patient and professional, and explained everything I needed to know in a clear and simple way. I received excellent recommendations on improving my portfolio, and now feel much more confident about my financial future. Shirley Ben-David Before purchasing an apartment, I wanted to check all my options regarding a mortgage. B-shore helped me understand all my options, and according to my needs, found the most suitable mortgage route for me. The staff was kind, available and attentive, and did everything necessary to help me make the best decision for me. I strongly recommend anyone who buys an apartment to use the services of B-Shore. Itzik Ezra When I contacted Bi-Shor I wanted to check my insurance portfolio, pensions, mortgages and more. I received professional and courteous service, a comprehensive snapshot of all my financial assets, along with recommendations on how to improve the portfolio. I was particularly impressed by the personal attitude and support throughout the entire process. The staff was available for any question, explained everything clearly and simply, and helped me make informed decisions about my financial future. Michal Avraham Before entering into the process of refinancing a mortgage, I wanted to understand all my options. B-shore did a great job! I received price quotes from them from several different banks, with a detailed explanation of each route. Thanks to their professional service, I was able to find the best offer for me and save thousands of shekels a year. Noa Mittalman I needed a loan against my pension fund, but I didn't know where to start. B-shore provided me with all the information I needed, helped me throughout the process, and were available for any questions. The staff was kind, professional and patient, and managed to facilitate a complex and complicated process. In the end, I got the loan I needed in a short time and without much bureaucracy. Yoram Levy After many years in which I didn't really pay attention to my insurance portfolio, I realized that it was time to put things in order. I contacted Bi-Shor and received excellent service. The staff was patient and professional, and explained everything I needed to know in a clear and simple way. I received excellent recommendations on improving my portfolio, and now feel much more confident about my financial future. Shirley Ben-David Before purchasing an apartment, I wanted to check all my options regarding a mortgage. B-shore helped me understand all my options, and according to my needs, found the most suitable mortgage route for me. The staff was kind, available and attentive, and did everything necessary to help me make the best decision for me. I strongly recommend anyone who buys an apartment to use the services of B-Shore. Itzik Ezra When I contacted Bi-Shor I wanted to check my insurance portfolio, pensions, mortgages and more. I received professional and courteous service, a comprehensive snapshot of all my financial assets, along with recommendations on how to improve the portfolio. I was particularly impressed by the personal attitude and support throughout the entire process. The staff was available for any question, explained everything clearly and simply, and helped me make informed decisions about my financial future. Michal Aver`
+
+        speak('Speech is enabled',()=>{
+            speak(str)
+
+        })
     }
     else{
         window.speechSynthesis.cancel();
+        speak('Speech is disabled');
+        setTimeout(()=>{
+            window.speechSynthesis.cancel();
+        },1250)
+
     }
     speakFlag = !speakFlag;
 
@@ -303,7 +315,10 @@ function speakingDisable(){
 function speak(text,cb) {
     var msg = new SpeechSynthesisUtterance();
     msg.text = text;
+    msg.lang = 'he-IL';
+    //console.log(msg.text);
     msg.volume = 1;
     msg.onend = cb;
     window.speechSynthesis.speak(msg);
 }
+
