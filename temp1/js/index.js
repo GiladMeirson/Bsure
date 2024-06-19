@@ -315,7 +315,7 @@ function speakingDisable(){
 function speak(text,cb) {
     var msg = new SpeechSynthesisUtterance();
     msg.text = text;
-    msg.lang = 'he-IL';
+    //msg.lang = 'he-IL';
     //console.log(msg.text);
     msg.volume = 1;
     msg.onend = cb;
