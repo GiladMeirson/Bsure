@@ -288,14 +288,14 @@ function speakingDisable(){
         setTimeout(()=>{
             window.speechSynthesis.cancel();
             textToVoice(str);
-        },1250)
+        },2000)
     }
     else{
         window.speechSynthesis.cancel();
         textToVoice('Speech is disabled');
         setTimeout(()=>{
             window.speechSynthesis.cancel();
-        },1250)
+        },2000)
 
     }
     speakFlag = !speakFlag;
