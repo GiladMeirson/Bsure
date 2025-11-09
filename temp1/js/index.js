@@ -10,7 +10,7 @@ const StringToConfig = {
     indexUrl : `https://giladmeirson.github.io/Bsure/temp1/`,
 }
 
-const BesureEmail = `besure360@gmail.com`;
+const BesureEmail = `Gilad.meirson@gmail.com`;
 
 $(document).ready(()=>{
         const user = {
@@ -127,7 +127,6 @@ const sendLead=(flag)=>{
             form:form,
             
         }
-        //console.log(Lead);
         if (name == '') {
             Swal.fire({
                 icon: "error",
@@ -232,7 +231,9 @@ function validatePhoneNumber(phoneNumber) {
 }
 
 
-
+function isUserMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
 
 
 
