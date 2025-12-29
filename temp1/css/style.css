@@ -1,8 +1,8 @@
 /********** Template CSS **********/
 :root {
-  --primary: #06a3da;
-  --secondary: #f57e57;
-  --light: #eef9ff;
+  --primary: #9ac7ff;
+  --secondary: #cff2ff;
+  --light: #e9f9ff;
   --dark: #091e3e;
 }
 
@@ -16,6 +16,42 @@ h3,
 h4,
 .font-weight-semi-bold {
   font-weight: 600 !important;
+}
+
+/* Text color adjustments for light backgrounds */
+.bg-primary,
+.bg-secondary,
+.bg-light {
+  color: #1a1a1a !important;
+}
+
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary h4,
+.bg-primary h5,
+.bg-primary p,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary h4,
+.bg-secondary h5,
+.bg-secondary p,
+.bg-light h1,
+.bg-light h2,
+.bg-light h3,
+.bg-light h4,
+.bg-light h5,
+.bg-light p {
+  color: #1a1a1a !important;
+}
+
+.text-primary2 {
+  color: #2c5282 !important;
+}
+
+.text-body2 {
+  color: #2d3748 !important;
 }
 
 h5,
@@ -104,11 +140,11 @@ h6,
 .navbar {
   background: linear-gradient(
     135deg,
-    #06a3da 0%,
-    #0891c4 50%,
-    #066b8f 100%
+    #9ac7ff 0%,
+    #7db8ff 50%,
+    #5fa3e6 100%
   ) !important;
-  box-shadow: 0 4px 20px rgba(6, 163, 218, 0.3);
+  box-shadow: 0 4px 20px rgba(154, 199, 255, 0.3);
   transition: all 0.3s ease-in-out;
   position: relative;
   z-index: 999;
@@ -270,11 +306,15 @@ h6,
   }
 
   .navbar-collapse {
-    background: rgba(6, 163, 218, 0.95);
+    background: rgba(154, 199, 255, 0.95);
     margin-top: 15px;
     padding: 15px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-collapse .nav-link {
+    color: #1a1a1a !important;
   }
 }
 
@@ -440,7 +480,7 @@ h6,
 }
 
 .testimonial-carousel {
-  background: rgba(6, 163, 218, 0.85);
+  background: #d5f4ffd9;
 }
 
 .testimonial-carousel .owl-nav {

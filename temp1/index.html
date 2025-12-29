@@ -1,91 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <title>Besure - דף הבית</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Besure Insurence" name="description">
+    <head>
+        <meta charset="utf-8">
+        <title>Besure - דף הבית</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Besure Insurence" name="description">
 
-    <!-- Favicon -->
-    <!-- <link href="img/favicon.ico" rel="icon"> -->
+        <!-- Favicon -->
+        <!-- <link href="img/favicon.ico" rel="icon"> -->
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+            rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-    <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+            rel="stylesheet" />
+        <link href="lib/twentytwenty/twentytwenty.css" rel="stylesheet" />
 
+        <!-- /////////////////////////////////////////////// -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+            crossorigin="anonymous"></script>
 
-    <!-- /////////////////////////////////////////////// -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-    crossorigin="anonymous"></script>
-    
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="./js/index.js"></script>
 
-    <script src="./js/index.js"></script>
-    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/master.css">
-    <script>
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/master.css">
+        <script>
         //Globals
         _ThisCheckBox = null;
     </script>
-</head>
+    </head>
 
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary m-1" role="status">
-            <span class="sr-only">Loading...</span>
+    <body>
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary m-1" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-dark m-1" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-secondary m-1" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
         </div>
-        <div class="spinner-grow text-dark m-1" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-        <div class="spinner-grow text-secondary m-1" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
+        <!-- Spinner End -->
 
-
- 
-
-
-    <!-- Navbar Start -->
-    <!-- <i class="fa fa-tooth me-2"></i> -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0 text-primary"><img style="width: 90px;" src="./img/logoBsure.png" alt=""></h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div dir="rtl" class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">דף בית</a>
-                <a href="./PensionFund.html" class="nav-item nav-link">קרן פנסיה</a>
-                <a href="./loanVsPension.html" class="nav-item nav-link">הלוואה כנגד קרן פנסיה </a>
-                <a href="./MortgageCycle.html" class="nav-item nav-link">מיחזור משכנתא </a>
-                <a href="./Mort&&gage.html" class="nav-item nav-link">משכנתא</a>
-                <a href="./insurenceCase.html" class="nav-item nav-link">בדיקת תיק הביטוח</a>
-                <!-- <div class="nav-item dropdown">
+        <!-- Navbar Start -->
+        <!-- <i class="fa fa-tooth me-2"></i> -->
+        <nav
+            class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0 text-primary"><img style="width: 90px;"
+                        src="./img/logoBsure.png" alt></h1>
+            </a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div dir="rtl" class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">דף
+                        בית</a>
+                    <a href="./PensionFund.html" class="nav-item nav-link">קרן
+                        פנסיה</a>
+                    <a href="./loanVsPension.html"
+                        class="nav-item nav-link">הלוואה כנגד קרן פנסיה </a>
+                    <a href="./MortgageCycle.html"
+                        class="nav-item nav-link">מיחזור משכנתא </a>
+                    <a href="./Mort&&gage.html"
+                        class="nav-item nav-link">משכנתא</a>
+                    <a href="./insurenceCase.html"
+                        class="nav-item nav-link">בדיקת תיק הביטוח</a>
+                    <!-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu m-0">
                         <a href="price.html" class="dropdown-item">Pricing Plan</a>
@@ -94,16 +105,16 @@
                         <a href="appointment.html" class="dropdown-item">Appointment</a>
                     </div>
                 </div> -->
-                <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+                    <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+                </div>
+                <a href="#Thisform" class="btn btn-primary py-2 px-4 ms-3">תחזרו
+                    אלי</a>
             </div>
-            <a href="#Thisform" class="btn btn-primary py-2 px-4 ms-3">תחזרו אלי</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
 
-
-    <!-- Full Screen Search Start -->
-    <!-- <div class="modal fade" id="searchModal" tabindex="-1">
+        <!-- Full Screen Search Start -->
+        <!-- <div class="modal fade" id="searchModal" tabindex="-1">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
                 <div class="modal-header border-0">
@@ -118,306 +129,500 @@
             </div>
         </div>
     </div> -->
-    <!-- Full Screen Search End -->
+        <!-- Full Screen Search End -->
 
-
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <!-- <img class="w-100" src="img/carousel-1.jpg" alt="Image"> -->
-                    <video autoplay loop muted  class="w-100" src="./video/bg1.mp4"></video>
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <!-- <h5 class="text-white text-uppercase mb-3 animated slideInDown">בי שור פתרונות פיננסיים ופנסיונים</h5> -->
-                            <h1 dir="rtl" class="display-1 text-white mb-md-4 animated zoomIn">לא עוד תשלומים מיותרים, רק פתרונות חכמים. <br>
-                                הצעד הראשון לביטחון שלכם  אביצח אלחייני</h1>
-                            <!-- <a href="appointment.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0">
+            <div id="header-carousel" class="carousel slide carousel-fade"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- <img class="w-100" src="img/carousel-1.jpg" alt="Image"> -->
+                        <video autoplay loop muted class="w-100"
+                            src="./video/bg1.mp4"></video>
+                        <div
+                            class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 900px;">
+                                <!-- <h5 class="text-white text-uppercase mb-3 animated slideInDown">אביצח אלחייני - פתרונות פיננסיים ופנסיונים</h5> -->
+                                <h1 dir="rtl"
+                                    class="display-1 text-white mb-md-4 animated zoomIn">לא
+                                    עוד תשלומים מיותרים, רק פתרונות חכמים. <br>
+                                    הצעד הראשון לביטחון שלכם - אביצח
+                                    אלחייני</h1>
+                                <!-- <a href="appointment.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
                             <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a> -->
+                            </div>
                         </div>
                     </div>
-                </div>
 
-            </div>
-        </div>
-    </div>
-    <!-- Carousel End -->
-
-    <!-- Banner Start -->
-    <div style="text-align: center;" id="bannerWrap" dir="rtl" class="container-fluid banner mb-5">
-        <div class="container">
-            <div class="row gx-0">
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
-                    <div id="bannerimg1" class="bannDivs bg-primary d-flex2 d-flex flex-column p-5" >
-                        <img class="imgNum" src="./img/headphones.png" alt="">
-
-                        <h3 style="text-align: center;" class="text-white mb-3">צור קשר עוד היום לקבלת ייעוץ חינם!</h3>
-                        <p class="text-white">מלא את פרטיך ותשוחח עם נציג. <br>צור קשר עוד היום לקבלת ייעוץ חינם!</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-                    <div id="bannerimg2" class="bannDivs bg-dark d-flex2 d-flex flex-column p-5" >
-                        <img class="imgNum" src="./img/solutions.png" alt="">
-                        <h3 class="text-white mb-3">פתרונות ביטוח חכמים</h3>
-                        <p class="text-white">חסוך כסף וקבל את הכיסוי הטוב ביותר.
-                            אנחנו יודעים שביטוח יכול להיות עסק יקר.
-                            לכן, אנו מציעים לך פתרונות ביטוח חכמים שיאפשרו לך לחסוך כסף ולקבל את הכיסוי הטוב ביותר.</p>
-
-                    </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
-                    <div id="bannerimg3" class="bannDivs bg-secondary d-flex2 d-flex flex-column p-5" >
-                        <img class="imgNum" src="./img/process.png" alt="">
-                        <h3 class="text-white mb-3">מימוש מקסימלי של זכויותיך</h3>
-                        <p class="text-white">בדיקת תיק ביטוח מקצועית.
-                            אנחנו מציעים לך שירות בדיקת תיק ביטוח מקצועית, שתאפשר לך לוודא שאתה מקבל את הכיסוי הטוב ביותר.
-                            צוות המומחים שלנו יבחן את תיק הביטוח שלך ויספק לך פתרון שמתאים עבורך .</p>
-
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Banner Start -->
+        <!-- Carousel End -->
 
+        <!-- Banner Start -->
+        <div style="text-align: center;" id="bannerWrap" dir="rtl"
+            class="container-fluid banner mb-5">
+            <div class="container">
+                <div class="row gx-0">
+                    <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                        <div id="bannerimg1"
+                            class="bannDivs bg-primary d-flex2 d-flex flex-column p-5">
+                            <img class="imgNum" src="./img/headphones.png" alt>
 
-      <!-- Appointment Start -->
-      <div id="Thisform" dir="rtl" class="container-fluid bg-primary bg-appointment my-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-6 py-5">
-                    <div class="py-5">
-                        <h1 class="display-5 text-white mb-4">העתיד שלך חשוב לך? רוצה להבטיח לעצמך ולמשפחתך את הביטחון הכלכלי הטוב ביותר?</h1>
-                        <p class="text-white mb-0">
-                            אנחנו כאן כדי לעזור לך לתכנן את הביטוח שלך בצורה נכונה, שתתאים לצרכים ולרצונות שלך.
-
-                            צוות המומחים שלנו ילווה אותך לאורך כל התהליך, יסביר לך את האפשרויות השונות ויעזור לך לבחור את הביטוח המתאים ביותר עבורך.
-                            
-                            שקט נפשי: ביטוחים מותאמים אישית לכל צורך.
-                            
-                            אנחנו מאמינים שכל אחד צריך ביטוח מותאם אישית, שיתאים לצרכים ולתקציב שלו.
-                            <br><br>
-                            אנו זמינים עבורך לכל שאלה או בקשה.
-
-                            צור קשר עוד היום ונציג מטעמנו יחזור אליך בהקדם.
-
-                            אנו כאן כדי לעזור לך להבטיח את עתידך! <br>
-                        </p>
+                            <h3 style="text-align: center;"
+                                class="text-white mb-3">צור קשר עוד היום לקבלת
+                                ייעוץ חינם!</h3>
+                            <p class="text-white">מלא את פרטיך ותשוחח עם נציג.
+                                <br>צור קשר עוד היום לקבלת ייעוץ חינם!</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
-                        <h1 class="text-white mb-4">השאר את פרטייך ונחזור אלייך</h1>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input id="customerNameIN" type="text" class="Sround form-control bg-light border-0" placeholder="שם מלא.." style="height: 55px;">
-                                </div>
+                    <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                        <div id="bannerimg2"
+                            class="bannDivs bg-dark d-flex2 d-flex flex-column p-5">
+                            <img class="imgNum" src="./img/solutions.png" alt>
+                            <h3 class="text-white mb-3">פתרונות ביטוח חכמים</h3>
+                            <p class="text-white">חסוך כסף וקבל את הכיסוי הטוב
+                                ביותר.
+                                אני יודע שביטוח יכול להיות עסק יקר.
+                                לכן, אני מציע לך פתרונות ביטוח חכמים שיאפשרו לך
+                                לחסוך כסף ולקבל את הכיסוי הטוב ביותר.</p>
 
-                                <div class="col-12 col-sm-6">
-                                    <input id="mobileNumberIN" type="text" class="Sround form-control bg-light border-0" placeholder="מספר נייד.." style="height: 55px;">
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+                        <div id="bannerimg3"
+                            class="bannDivs bg-secondary d-flex2 d-flex flex-column p-5">
+                            <img class="imgNum" src="./img/process.png" alt>
+                            <h3 class="text-white mb-3">מימוש מקסימלי של
+                                זכויותיך</h3>
+                            <p class="text-white">בדיקת תיק ביטוח מקצועית.
+                                אני מציע לך שירות בדיקת תיק ביטוח מקצועית,
+                                שתאפשר לך לוודא שאתה מקבל את הכיסוי הטוב ביותר.
+                                אני אבחן את תיק הביטוח שלך ואספק לך פתרון שמתאים
+                                עבורך.</p>
 
-
-                                <div class="col-12 col-sm-6">
-                                    <input id="customerID" type="text" class=" Sround form-control bg-light border-0" placeholder="מספר תז כולל ביקורת.." style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="date" id="date1IN" data-target-input="nearest">
-                                        <input id="birthDateIN" type="text" onfocus="(this.type='date')"
-                                            class="Sround form-control bg-light border-0 datetimepicker-input"
-                                            placeholder="תאריך לידה" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
-
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="classicWrpr">
-                                        <input  type="checkbox" class=" termsServiceIN hover" name="termsServiceIN" id="termsServiceIN1">
-                                        <a class="hover useTerms" id="termsServiceIN11" onclick="CloseOpenMe('ModalWrp',true,this)" >קראתי את תנאי השימוש</a>
-                                    </div>
-
-                                </div>
-                                <div class="col-12">
-                                    <button id="BtnSend1"  class="Sround submitBtn btn btn-dark w-100 py-3">שלח פרטים לייעוץ בחינם</button>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Appointment End -->
+        <!-- Banner Start -->
 
+        <!-- Appointment Start -->
+        <div id="Thisform" dir="rtl"
+            class="container-fluid bg-primary bg-appointment my-5 wow fadeInUp"
+            data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-6 py-5">
+                        <div class="py-5">
+                            <h1 style="color: rgb(255, 255, 255) !important;"
+                                class="display-5 text-white mb-4">העתיד שלך חשוב
+                                לך? רוצה להבטיח לעצמך ולמשפחתך את הביטחון הכלכלי
+                                הטוב ביותר?</h1>
+                            <p style="color: rgb(255, 255, 255) !important;"
+                                class="text-white mb-0">
+                                אני כאן כדי לעזור לך לתכנן את הביטוח שלך בצורה
+                                נכונה, שתתאים לצרכים ולרצונות שלך.
 
+                                אני אלווה אותך לאורך כל התהליך, אסביר לך את
+                                האפשרויות השונות ואעזור לך לבחור את הביטוח
+                                המתאים ביותר עבורך.
 
+                                שקט נפשי: ביטוחים מותאמים אישית לכל צורך.
 
+                                אני מאמין שכל אחד צריך ביטוח מותאם אישית, שיתאים
+                                לצרכים ולתקציב שלו.
+                                <br><br>
+                                אני זמין עבורך לכל שאלה או בקשה.
 
+                                צור קשר עוד היום ואחזור אליך בהקדם.
 
-  
-
-
-    <!-- Service Start -->
-    <div dir="rtl" class="container-fluid py-5 wow fadeInUp " data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-5 mb-5">
-                <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px;">
-                    <div class="position-relative h-100 rounded overflow-hidden">
-
-                        <!-- <video autoplay muted loop class="position-absolute w-100 h-100" src="./video/seviceItem.mp4"></video> -->
-                         <img id="imgvid" src="../temp1/img/Insuranceportfolio.png" class="position-absolute w-100 h-100" alt="">
-                        <h3 id="h3Font" style="top: 85%; margin-bottom: 10px; z-index: 5;" class="position-absolute" >הביטוח הוא ההשקעה החשובה ביותר שתעשו בחייכם.
-                            אל תתפשרו על הביטחון שלכם - בחרו בנו!
-                        </h3>
-                        <br><br><br><br><br>
-
-                    </div>
- 
-                </div>
-                <div class="col-lg-7">
-                    <div class="section-title mb-5">
-                        <h5 class="position-relative d-inline-block text-primary text-uppercase">המוצרים שלנו:</h5>
-                        <h1 class="display-5 mb-0">מציעים מוצרים פנסיונים ופיננסים עם השירות הטוב ביותר.</h1>
-                    </div>
-                    <div class="row g-5">
-                        <div onclick="Href('./loanVsPension.html')" class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.6s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="serviceIMG img-fluid" src="img/loan.png" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">הלוואה כנגד קרן פנסיה</h5>
-                            </div>
-                        </div>
-                        <div onclick="Href('./MortgageCycle.html')" class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.9s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class=" serviceIMG img-fluid" src="img/recyclepro.png" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">מיחזור משכנתא</h5>
-                            </div>
+                                אני כאן כדי לעזור לך להבטיח את עתידך! <br>
+                            </p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-7">
-                    <div class="row g-5">
-                        <div onclick="Href('./Mortgage.html')" class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.3s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="serviceIMG img-fluid" src="img/mortgage.png" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">משכנתאות</h5>
-                            </div>
-                        </div>
-                        <div onclick="Href('./insurenceCase.html')" class="col-md-6 hover service-item wow zoomIn" data-wow-delay="0.6s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="serviceIMG img-fluid" src="img/Insuranceportfolio.png" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">בדיקת תיק ביטוח</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 service-item wow zoomIn" data-wow-delay="0.9s">
-                    
-                        <!-- <h3 class="text-white mb-3">מעוניין בבירור על אחד המוצרים ?</h3>
-                        <p class="text-white mb-3">אל תפספס את ההזדמנות שלך וקבע עוד היום שיחזרו אלייך !</p>
-                        <button class="Sround submitBtn btn btn-dark w-100 py-3" type="submit">לחץ כאן לבירור</button> -->
-
-                        <div class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn" data-wow-delay="0.6s">
-                            <h1 class="text-white mb-4">מעוניין לשמוע עוד ?</h1>
-                            <h4 class="text-white mb-4">השאר את הפרטים שלך ונחזור אלייך בהקדם.</h4>
-
+                    <div class="col-lg-6">
+                        <div
+                            class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
+                            data-wow-delay="0.6s">
+                            <h1 class="text-white mb-4">השאר את פרטייך ונחזור
+                                אלייך</h1>
                             <form>
                                 <div class="row g-3">
                                     <div class="col-12 col-sm-6">
-                                        <input id="customerNameIN2" type="text" class="Sround form-control bg-light border-0" placeholder="שם מלא.." style="height: 55px;">
+                                        <input id="customerNameIN" type="text"
+                                            class="Sround form-control bg-light border-0"
+                                            placeholder="שם מלא.."
+                                            style="height: 55px;">
                                     </div>
-    
+
                                     <div class="col-12 col-sm-6">
-                                        <input id="mobileNumberIN2" type="text" class="Sround form-control bg-light border-0" placeholder="מספר נייד.." style="height: 55px;">
+                                        <input id="mobileNumberIN" type="text"
+                                            class="Sround form-control bg-light border-0"
+                                            placeholder="מספר נייד.."
+                                            style="height: 55px;">
                                     </div>
-    
-    
+
                                     <div class="col-12 col-sm-6">
-                                        <input id="customerID2" type="text" class=" Sround form-control bg-light border-0" placeholder="מספר תז כולל ביקורת.." style="height: 55px;">
+                                        <input id="customerID" type="text"
+                                            class=" Sround form-control bg-light border-0"
+                                            placeholder="מספר תז כולל ביקורת.."
+                                            style="height: 55px;">
                                     </div>
                                     <div class="col-12 col-sm-6">
-                                        <div class="date" id="date1IN" data-target-input="nearest">
-                                            <input id="birthDateIN2" type="text" onfocus="(this.type='date')"
+                                        <div class="date" id="date1IN"
+                                            data-target-input="nearest">
+                                            <input id="birthDateIN" type="text"
+                                                onfocus="(this.type='date')"
                                                 class="Sround form-control bg-light border-0 datetimepicker-input"
-                                                placeholder="תאריך לידה" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
-    
+                                                placeholder="תאריך לידה"
+                                                data-target="#date1"
+                                                data-toggle="datetimepicker"
+                                                style="height: 55px;">
+
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="classicWrpr">
-                                            <input  type="checkbox" class="termsServiceIN hover" name="termsServiceIN" id="termsServiceIN2">
-                                            <a class="hover useTerms" id="termsServiceIN22"  onclick="CloseOpenMe('ModalWrp',true,this)" >קראתי את תנאי השימוש</a>
+                                            <input type="checkbox"
+                                                class=" termsServiceIN hover"
+                                                name="termsServiceIN"
+                                                id="termsServiceIN1">
+                                            <a class="hover useTerms"
+                                                id="termsServiceIN11"
+                                                onclick="CloseOpenMe('ModalWrp',true,this)">קראתי
+                                                את תנאי השימוש</a>
                                         </div>
-    
+
                                     </div>
                                     <div class="col-12">
-                                        <button id="BtnSend2" class="Sround submitBtn btn btn-dark w-100 py-3" type="submit">שלח</button>
+                                        <button id="BtnSend1"
+                                            class="Sround submitBtn btn btn-dark w-100 py-3">שלח
+                                            פרטים לייעוץ בחינם</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Appointment End -->
+
+        <!-- Partners Slider Start -->
+        <div class="container-fluid py-5 bg-light">
+            <div class="container">
+                <div class="section-title text-center mb-5">
+                    <h5
+                        class="position-relative d-inline-block text-primary text-uppercase">השותפים
+                        שלנו</h5>
+                    <h2 class="display-6 mb-0">אנחנו עובדים עם החברות
+                        המובילות</h2>
+                </div>
+                <div class="partners-slider-wrapper">
+                    <div class="partners-slider">
+                        <div class="partners-track">
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider0-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider1-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider2-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider3-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider4-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider5-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <!-- Duplicate for seamless loop -->
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider0-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider1-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider2-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider3-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider4-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider5-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Partners Slider End -->
+
+        <!-- Service Start -->
+        <div dir="rtl" class="container-fluid py-5 wow fadeInUp "
+            data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row g-5 mb-5">
+                    <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s"
+                        style="min-height: 400px;">
+                        <div
+                            class="position-relative h-100 rounded overflow-hidden">
+
+                            <!-- <video autoplay muted loop class="position-absolute w-100 h-100" src="./video/seviceItem.mp4"></video> -->
+                            <img id="imgvid"
+                                src="./img/Insuranceportfolio.png"
+                                class="position-absolute w-100 h-100"
+                                style="object-fit: cover;" alt>
+                            <h3 id="h3Font"
+                                style="position: absolute; bottom: 0%; left: 50%; transform: translateX(-50%); width: 90%; text-align: center; z-index: 5; color: rgb(0, 0, 0); text-shadow: 2px 2px 4px rgba(0,0,0,0.7);"
+                                class="position-absolute">הביטוח הוא ההשקעה
+                                החשובה ביותר שתעשו בחייכם.
+                                אל תתפשרו על הביטחון שלכם - בחרו בנו!
+                            </h3>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="section-title mb-5">
+                            <h5
+                                class="position-relative d-inline-block text-primary text-uppercase">המוצרים
+                                שלנו:</h5>
+                            <h1 class="display-5 mb-0">מציעים מוצרים פנסיונים
+                                ופיננסים עם השירות הטוב ביותר.</h1>
+                        </div>
+                        <div class="row g-5">
+                            <div onclick="Href('./loanVsPension.html')"
+                                class="col-md-6 hover service-item wow zoomIn"
+                                data-wow-delay="0.6s">
+                                <div class="rounded-top overflow-hidden">
+                                    <img class="serviceIMG img-fluid"
+                                        src="img/loan.png" alt>
+                                </div>
+                                <div
+                                    class="position-relative bg-light rounded-bottom text-center p-4">
+                                    <h5 class="m-0">הלוואה כנגד קרן פנסיה</h5>
+                                </div>
+                            </div>
+                            <div onclick="Href('./MortgageCycle.html')"
+                                class="col-md-6 hover service-item wow zoomIn"
+                                data-wow-delay="0.9s">
+                                <div class="rounded-top overflow-hidden">
+                                    <img class=" serviceIMG img-fluid"
+                                        src="img/recyclepro.png" alt>
+                                </div>
+                                <div
+                                    class="position-relative bg-light rounded-bottom text-center p-4">
+                                    <h5 class="m-0">מיחזור משכנתא</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-7">
+                        <div class="row g-5">
+                            <div onclick="Href('./Mortgage.html')"
+                                class="col-md-6 hover service-item wow zoomIn"
+                                data-wow-delay="0.3s">
+                                <div class="rounded-top overflow-hidden">
+                                    <img class="serviceIMG img-fluid"
+                                        src="img/mortgage.png" alt>
+                                </div>
+                                <div
+                                    class="position-relative bg-light rounded-bottom text-center p-4">
+                                    <h5 class="m-0">משכנתאות</h5>
+                                </div>
+                            </div>
+                            <div onclick="Href('./insurenceCase.html')"
+                                class="col-md-6 hover service-item wow zoomIn"
+                                data-wow-delay="0.6s">
+                                <div class="rounded-top overflow-hidden">
+                                    <img class="serviceIMG img-fluid"
+                                        src="img/Insuranceportfolio.png" alt>
+                                </div>
+                                <div
+                                    class="position-relative bg-light rounded-bottom text-center p-4">
+                                    <h5 class="m-0">בדיקת תיק ביטוח</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 service-item wow zoomIn"
+                        data-wow-delay="0.9s">
+
+                        <!-- <h3 class="text-white mb-3">מעוניין בבירור על אחד המוצרים ?</h3>
+                        <p class="text-white mb-3">אל תפספס את ההזדמנות שלך וקבע עוד היום שיחזרו אלייך !</p>
+                        <button class="Sround submitBtn btn btn-dark w-100 py-3" type="submit">לחץ כאן לבירור</button> -->
+
+                        <div
+                            class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
+                            data-wow-delay="0.6s">
+                            <h1 class="text-white mb-4">מעוניין לשמוע עוד ?</h1>
+                            <h4 class="text-white mb-4">השאר את הפרטים שלך
+                                ונחזור אלייך בהקדם.</h4>
+
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-12 col-sm-6">
+                                        <input id="customerNameIN2" type="text"
+                                            class="Sround form-control bg-light border-0"
+                                            placeholder="שם מלא.."
+                                            style="height: 55px;">
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <input id="mobileNumberIN2" type="text"
+                                            class="Sround form-control bg-light border-0"
+                                            placeholder="מספר נייד.."
+                                            style="height: 55px;">
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <input id="customerID2" type="text"
+                                            class=" Sround form-control bg-light border-0"
+                                            placeholder="מספר תז כולל ביקורת.."
+                                            style="height: 55px;">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="date" id="date1IN"
+                                            data-target-input="nearest">
+                                            <input id="birthDateIN2" type="text"
+                                                onfocus="(this.type='date')"
+                                                class="Sround form-control bg-light border-0 datetimepicker-input"
+                                                placeholder="תאריך לידה"
+                                                data-target="#date1"
+                                                data-toggle="datetimepicker"
+                                                style="height: 55px;">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="classicWrpr">
+                                            <input type="checkbox"
+                                                class="termsServiceIN hover"
+                                                name="termsServiceIN"
+                                                id="termsServiceIN2">
+                                            <a class="hover useTerms"
+                                                id="termsServiceIN22"
+                                                onclick="CloseOpenMe('ModalWrp',true,this)">קראתי
+                                                את תנאי השימוש</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12">
+                                        <button id="BtnSend2"
+                                            class="Sround submitBtn btn btn-dark w-100 py-3"
+                                            type="submit">שלח</button>
                                     </div>
                                 </div>
                             </form>
                         </div>
 
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
-
-    <!-- About Start -->
-    <div dir="rtl" class="aboutus container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <div class="section-title mb-4">
-                        <h5 class="position-relative d-inline-block text-primary2 text-uppercase">מי אנחנו ?</h5>
-                        <h1 class="display-5 mb-0">הייעוץ האישי שלכם להצלחה כלכלית</h1>
-                    </div>
-                    <h4 class="text-body2 fst-italic mb-4">השותפים שלכם לביטחון פיננסי</h4>
-                    <p style="color: #151515;" class="mb-4">אצלנו בבי-שור, אנו מחויבים לספק לכם את השירותים הפיננסיים והפנסיוניים המקצועיים והמתקדמים ביותר. צוות המומחים שלנו כולל יועצים מנוסים בעלי ידע רחב והבנה עמוקה בתחום הפיננסי, אשר משקיעים כל מאמץ כדי להתאים את הפתרונות המתאימים ביותר לצרכים האישיים והעסקיים שלכם. אנו מלווים את לקוחותינו בכל שלב, החל מייעוץ פיננסי ראשוני ועד לתכנון פנסיוני מקיף, במטרה להבטיח עתיד כלכלי בטוח ויציב. בואו להיות חלק מהמשפחה שלנו ולהנות מהשקט הנפשי שמגיע עם תכנון פיננסי מושכל ומותאם אישית.</p>
-                    <div class="row g-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary2 me-3"></i> אלפי לקוחות מרוצים  </h5>
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary2 me-3"></i> שירות הטוב ביותר  </h5>
-                        </div>
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary2 me-3"></i> אנחנו כאן  24/7</h5>
-                            <h5 class="mb-3"><i class="fa fa-check-circle text-primary2 me-3"></i> במחיר הטוב ביותר</h5>
-                        </div>
-                    </div>
-                    <a href="#Thisform" class="btn Sround btn-primary py-3 px-5 mt-4 wow zoomIn" data-wow-delay="0.6s">צרו איתנו קשר</a>
-                </div>
-                <div class="col-lg-5" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute Sround w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/aboutus.jpeg" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- About End -->
+        <!-- Service End -->
 
+        <!-- About Start -->
+        <div dir="rtl" class="aboutus container-fluid py-5 wow fadeInUp"
+            data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-7">
+                        <div class="section-title mb-4">
+                            <h5
+                                class="position-relative d-inline-block text-primary2 text-uppercase">נעים
+                                להכיר</h5>
+                            <h1 class="display-5 mb-0">אביצח אלחייני</h1>
+                        </div>
+                        <h4 class="text-body2 fst-italic mb-4">סוכן ביטוח
+                            אישי</h4>
+                        <p style="color: #151515;" class="mb-4"> המטרה שלי היא
+                            אחת - לעזור לכם לבנות ביטחון כלכלי אמיתי כזה שמותאם
+                            בדיוק לצרכים ולחלומות שלכם <br> אני מלווה משפחות,
+                            יחידים ועסקים בבחירת פתרונות ביטוח חכמים בצורה
+                            מקצועית שקופה ואכפתית. <br><br>אצלי לא תמצאו פתרונות
+                            מדף, כל לקוח מקבל ליווי אישי, בדיקה יסודית והתאמה
+                            מלאה כדי לוודא שהכיסוי שאתם בוחרים היום באמת יגן
+                            עליכם כשצריך <br>אני מתמחה בביטוחי חיים, בריאות,
+                            משכנתאות, פנסיוני ועוד. <br><br>אני מזמין אותכם
+                            להצטרף אליי לתהליך אישי, מקצועי ומשמעותי.</p>
+                        <div class="row g-3">
+                            <div class="col-sm-6 wow zoomIn"
+                                data-wow-delay="0.3s">
+                                <h5 class="mb-3"><i
+                                        class="fa fa-check-circle text-primary2 me-3"></i>
+                                    אלפי לקוחות מרוצים </h5>
+                                <h5 class="mb-3"><i
+                                        class="fa fa-check-circle text-primary2 me-3"></i>
+                                    שירות הטוב ביותר </h5>
+                            </div>
+                            <div class="col-sm-6 wow zoomIn"
+                                data-wow-delay="0.6s">
+                                <h5 class="mb-3"><i
+                                        class="fa fa-check-circle text-primary2 me-3"></i>
+                                    אני כאן 24/7</h5>
+                                <h5 class="mb-3"><i
+                                        class="fa fa-check-circle text-primary2 me-3"></i>
+                                    במחיר הטוב ביותר</h5>
+                            </div>
+                        </div>
+                        <a href="#Thisform"
+                            class="btn Sround btn-primary py-3 px-5 mt-4 wow zoomIn"
+                            data-wow-delay="0.6s">צרו איתנו קשר</a>
+                    </div>
+                    <div class="col-lg-5" style="min-height: 600px;">
+                        <div class="position-relative h-100">
+                            <img
+                                class="position-absolute Sround w-100 h-100 rounded wow zoomIn"
+                                data-wow-delay="0.9s"
+                                src="img/nicetomeetyou.png"
+                                style="object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
 
-
-
-
-
-
-
-    <!-- Offer Start -->
-    <!-- <div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <!-- Offer Start -->
+        <!-- <div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
@@ -431,11 +636,10 @@
             </div>
         </div>
     </div> -->
-    <!-- Offer End -->
+        <!-- Offer End -->
 
-
-    <!-- Pricing Start -->
-    <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <!-- Pricing Start -->
+        <!-- <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-5">
@@ -502,71 +706,113 @@
             </div>
         </div>
     </div> -->
-    <!-- Pricing End -->
+        <!-- Pricing End -->
 
+        <!-- Testimonial Start -->
+        <div
+            class="container-fluid bg-primary bg-testimonial py-5 my-5 wow fadeInUp"
+            data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div
+                            class="owl-carousel testimonial-carousel rounded p-5 wow zoomIn"
+                            data-wow-delay="0.6s">
+                            <!-- one item -->
+                            <div
+                                class="testimonial-item text-center text-white">
+                                <img class="img-fluid mx-auto rounded mb-4"
+                                    src="img/rev11.png" alt>
+                                <p class="fs-5">כשפניתי לאביצח רציתי לבדוק את
+                                    תיק הביטוח שלי, פנסיות, משכנתאות ועוד.
+                                    קיבלתי שירות מקצועי ואדיב, תמונת מצב מקיפה
+                                    של כל הנכסים הפיננסיים שלי, יחד עם המלצות
+                                    כיצד לשפר את התיק.
+                                    התרשמתי במיוחד מהיחס האישי והליווי לאורך כל
+                                    התהליך. אביצח היה זמין לכל שאלה, הסביר את כל
+                                    הדברים בצורה ברורה ופשוטה, ועזר לי לקבל
+                                    החלטות מושכלות לגבי עתידי הפיננסי.</p>
+                                <hr class="mx-auto w-25">
+                                <h4 class="text-white mb-0">מיכל אברהם</h4>
+                            </div>
+                            <!-- one item -->
+                            <div
+                                class="testimonial-item text-center text-white">
+                                <img class="img-fluid mx-auto rounded mb-4"
+                                    src="img/rev22.png" alt>
+                                <p class="fs-5">לפני שנכנסתי לתהליך של מיחזור
+                                    משכנתא, רציתי להבין את כל האפשרויות שלי.
+                                    אביצח עשה עבודה נהדרת! קיבלתי ממנו הצעות
+                                    מחיר ממספר בנקים שונים, תוך הסבר מפורט על כל
+                                    מסלול.
+                                    בזכות השירות המקצועי שלו, הצלחתי למצוא את
+                                    ההצעה הכי טובה עבורי ולחסוך אלפי שקלים
+                                    בשנה.</p>
+                                <hr class="mx-auto w-25">
+                                <h4 class="text-white mb-0">נועה מיטלמן</h4>
+                            </div>
+                            <!-- one item -->
+                            <!-- one item -->
+                            <div
+                                class="testimonial-item text-center text-white">
+                                <img class="img-fluid mx-auto rounded mb-4"
+                                    src="img/rev33.png" alt>
+                                <p class="fs-5">הייתי צריך הלוואה כנגד קרן
+                                    הפנסיה שלי, אבל לא ידעתי מאיפה להתחיל. אביצח
+                                    סיפק לי את כל המידע שהייתי צריך, עזר לי
+                                    לאורך כל התהליך, והיה זמין לכל שאלה.
+                                    הוא היה אדיב, מקצועי וסבלני, והצליח להקל על
+                                    תהליך מורכב ומסובך. בסופו של דבר, קיבלתי את
+                                    ההלוואה שהייתי צריך תוך זמן קצר ובלי הרבה
+                                    בירוקרטיה.</p>
+                                <hr class="mx-auto w-25">
+                                <h4 class="text-white mb-0">יורם לוי</h4>
+                            </div>
+                            <!-- one item -->
+                            <!-- one item -->
+                            <div
+                                class="testimonial-item text-center text-white">
+                                <img class="img-fluid mx-auto rounded mb-4"
+                                    src="img/rev44.png" alt>
+                                <p class="fs-5">לאחר שנים רבות שבהן לא ממש שמתי
+                                    לב לתיק הביטוח שלי, הבנתי שהגיע הזמן לעשות
+                                    סדר. פניתי לאביצח וקיבלתי שירות מעולה.
+                                    הוא היה סבלני ומקצועי, והסביר לי בצורה ברורה
+                                    ופשוטה את כל מה שצריך לדעת. קיבלתי המלצות
+                                    מצוינות לגבי שיפור התיק שלי, וכעת אני מרגיש
+                                    הרבה יותר בטוח לגבי עתידי הפיננסי.</p>
+                                <hr class="mx-auto w-25">
+                                <h4 class="text-white mb-0">שירלי בן-דויד</h4>
+                            </div>
+                            <!-- one item -->
 
-    <!-- Testimonial Start -->
-    <div  class="container-fluid bg-primary bg-testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="owl-carousel testimonial-carousel rounded p-5 wow zoomIn" data-wow-delay="0.6s">
-                        <!-- one item -->
-                        <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev11.png" alt="">
-                            <p class="fs-5">כשפניתי לבי-שור רציתי לבדוק את תיק הביטוח שלי, פנסיות, משכנתאות ועוד. קיבלתי שירות מקצועי ואדיב, תמונת מצב מקיפה של כל הנכסים הפיננסיים שלי, יחד עם המלצות כיצד לשפר את התיק.
-                                התרשמתי במיוחד מהיחס האישי והליווי לאורך כל התהליך. הצוות היה זמין לכל שאלה, הסביר את כל הדברים בצורה ברורה ופשוטה, ועזר לי לקבל החלטות מושכלות לגבי עתידי הפיננסי.</p>
-                            <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">מיכל אברהם</h4>
-                        </div>
-                         <!-- one item -->
-                        <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev22.png" alt="">
-                            <p class="fs-5">לפני שנכנסתי לתהליך של מיחזור משכנתא, רציתי להבין את כל האפשרויות שלי. בי-שור עשו עבודה נהדרת! קיבלתי מהם הצעות מחיר ממספר בנקים שונים, תוך הסבר מפורט על כל מסלול.
-                                בזכות השירות המקצועי שלהם, הצלחתי למצוא את ההצעה הכי טובה עבורי ולחסוך אלפי שקלים בשנה.</p>
-                            <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">נועה מיטלמן</h4>
-                        </div>
-                         <!-- one item -->
-                                                  <!-- one item -->
-                        <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev33.png" alt="">
-                            <p class="fs-5">הייתי צריך הלוואה כנגד קרן הפנסיה שלי, אבל לא ידעתי מאיפה להתחיל. בי-שור סיפקו לי את כל המידע שהייתי צריך, עזרו לי לאורך כל התהליך, והיו זמינים לכל שאלה.
-                                הצוות היה אדיב, מקצועי וסבלני, והצליחו להקל על תהליך מורכב ומסובך. בסופו של דבר, קיבלתי את ההלוואה שהייתי צריך תוך זמן קצר ובלי הרבה בירוקרטיה.</p>
-                            <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">יורם לוי</h4>
-                        </div>
-                         <!-- one item -->
-                        <!-- one item -->
-                        <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev44.png" alt="">
-                            <p class="fs-5">לאחר שנים רבות שבהן לא ממש שמתי לב לתיק הביטוח שלי, הבנתי שהגיע הזמן לעשות סדר. פניתי לבי-שור וקיבלתי שירות מעולה.
-                                הצוות היה סבלני ומקצועי, והסביר לי בצורה ברורה ופשוטה את כל מה שצריך לדעת. קיבלתי המלצות מצוינות לגבי שיפור התיק שלי, וכעת אני מרגיש הרבה יותר בטוח לגבי עתידי הפיננסי.</p>
-                            <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">שירלי בן-דויד</h4>
-                        </div>
-                         <!-- one item -->
+                            <!-- one item -->
+                            <div
+                                class="testimonial-item text-center text-white">
+                                <img class="img-fluid mx-auto rounded mb-4"
+                                    src="img/rev55.png" alt>
+                                <p class="fs-5">לפני שרכשתי דירה, רציתי לבדוק את
+                                    כל האפשרויות שלי לגבי משכנתא. אביצח עזר לי
+                                    להבין את כל האפשרויות שלי, ובהתאם לצרכים
+                                    שלי, מצא עבורי את מסלול המשכנתא הכי מתאים.
+                                    הוא היה אדיב, זמין וקשוב, ועשה כל מה שצריך
+                                    כדי לעזור לי לקבל את ההחלטה הטובה ביותר
+                                    עבורי. אני ממליץ בחום לכל מי שרוכש דירה
+                                    להשתמש בשירותיו של אביצח.</p>
+                                <hr class="mx-auto w-25">
+                                <h4 class="text-white mb-0">איציק עזרא</h4>
+                            </div>
+                            <!-- one item -->
 
-                        <!-- one item -->
-                        <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/rev55.png" alt="">
-                            <p class="fs-5">לפני שרכשתי דירה, רציתי לבדוק את כל האפשרויות שלי לגבי משכנתא. בי-שור עזרו לי להבין את כל האפשרויות שלי, ובהתאם לצרכים שלי, מצאו עבורי את מסלול המשכנתא הכי מתאים.
-                                הצוות היה אדיב, זמין וקשוב, ועשה כל מה שצריך כדי לעזור לי לקבל את ההחלטה הטובה ביותר עבורי. אני ממליץ בחום לכל מי שרוכש דירה להשתמש בשירותי בי-שור.</p>
-                            <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">איציק עזרא</h4>
                         </div>
-                         <!-- one item -->
-             
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Testimonial End -->
+        <!-- Testimonial End -->
 
-
-    <!-- Team Start -->
-    <!-- <div class="container-fluid py-5">
+        <!-- Team Start -->
+        <!-- <div class="container-fluid py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
@@ -664,11 +910,10 @@
             </div>
         </div>
     </div> -->
-    <!-- Team End -->
+        <!-- Team End -->
 
-
-    <!-- Newsletter Start -->
-    <!-- <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+        <!-- Newsletter Start -->
+        <!-- <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
         <div class="container">
             <div class="bg-primary p-5">
                 <form class="mx-auto" style="max-width: 600px;">
@@ -680,117 +925,170 @@
             </div>
         </div>
     </div> -->
-    <!-- Newsletter End -->
-    
+        <!-- Newsletter End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="">
-        <div class="container pt-5">
-            <div class="row g-5 pt-4">
-                <div class="col-lg-4 col-md-6">
-                    <h3 class="text-white mb-4">Quick Links</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="./index.html"><i class="bi bi-arrow-right text-primary me-2"></i>דף הבית</a>
-                        <a class="text-light mb-2" href="./PensionFund.html"><i class="bi bi-arrow-right text-primary me-2"></i>פנסיוני</a>
-                        <a class="text-light mb-2" href="./loanVsPension.html"><i class="bi bi-arrow-right text-primary me-2"></i>הלוואה כנגד קרן פנסיה</a>
-                        <a class="text-light mb-2" href="./MortgageCycle.html"><i class="bi bi-arrow-right text-primary me-2"></i>מיחזור משכנתא</a>
-                        <a class="text-light mb-2" href="./insurenceCase.html"><i class="bi bi-arrow-right text-primary me-2"></i>בדיקת תיק הביטוח</a>
-                        <a class="text-light" href="./Mort&&gage.html"><i class="bi bi-arrow-right text-primary me-2"></i>משכנתאות</a>
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light py-5 wow fadeInUp"
+            data-wow-delay="0.3s" style>
+            <div class="container pt-5">
+                <div class="row g-5 pt-4">
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white mb-4">Quick Links</h3>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-light mb-2" href="./index.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>דף
+                                הבית</a>
+                            <a class="text-light mb-2"
+                                href="./PensionFund.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>פנסיוני</a>
+                            <a class="text-light mb-2"
+                                href="./loanVsPension.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>הלוואה
+                                כנגד קרן פנסיה</a>
+                            <a class="text-light mb-2"
+                                href="./MortgageCycle.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>מיחזור
+                                משכנתא</a>
+                            <a class="text-light mb-2"
+                                href="./insurenceCase.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>בדיקת
+                                תיק הביטוח</a>
+                            <a class="text-light" href="./Mort&&gage.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>משכנתאות</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white mb-4">Get In Touch</h3>
+                        <p class="mb-2"><i
+                                class="bi bi-geo-alt text-primary me-2"></i>ישראל,
+                            הוד השרון, בני ברית 7</p>
+                        <p class="mb-2"><i
+                                class="bi bi-envelope-open text-primary me-2"></i>avitzah@mll-ins.co.il</p>
+                        <p class="mb-0"><i
+                                class="bi bi-telephone text-primary me-2"></i>
+                            <a href="tel:052-5546133"></a>052-5546133</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white mb-4">Follow Us</h3>
+                        <div class="d-flex">
+                            <a
+                                class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                                href="#"><i
+                                    class="fab fa-twitter fw-normal"></i></a>
+                            <a
+                                class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                                href="#"><i
+                                    class="fab fa-facebook-f fw-normal"></i></a>
+                            <a
+                                class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                                href="#"><i
+                                    class="fab fa-linkedin-in fw-normal"></i></a>
+                            <a
+                                class="btn btn-lg btn-primary btn-lg-square rounded"
+                                href="#"><i
+                                    class="fab fa-instagram fw-normal"></i></a>
+                        </div>
                     </div>
                 </div>
-       
-                <div class="col-lg-4 col-md-6">
-                    <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>ישראל, הוד השרון, בני ברית 7</p>
-                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>avitzah@mll-ins.co.il</p>
-                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i> <a href="tel:052-5546133"></a>052-5546133</p>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h3 class="text-white mb-4">Follow Us</h3>
-                    <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+            </div>
+        </div>
+        <div class="container-fluid text-light py-4"
+            style="background: #051225;">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-md-0">&copy; <a
+                                class="text-white border-bottom" href="#">אביצח
+                                סוכנות ביטוח</a>. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0">Designed by <a
+                                class="text-white border-bottom"
+                                href="https://giladmeirson.github.io/Gilad_Meirson_website/">Gilad
+                                Meirson</a></p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid text-light py-4" style="background: #051225;">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">אביצח סוכנות ביטוח</a>. All Rights Reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Designed by <a class="text-white border-bottom" href="https://giladmeirson.github.io/Gilad_Meirson_website/">Gilad Meirson</a></p>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#"
+            class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i
+                class="bi bi-arrow-up"></i></a>
+
+        <div dir="rtl" id="ModalWrp">
+            <div id="modal">
+                <p onclick="CloseOpenMe('ModalWrp',false)" id="Exit">X</p>
+                <div id="modalContent">
+                    <p class="termsofUseText">
+                        תקנון טופס השארת פרטים - אביצח אלחייני <br>
+
+                        טופס זה נועד לאפשר לך להשאיר פרטים אישיים לצורך קבלת
+                        הצעות מחיר עבור ביטוח. <br>
+                        פרטים הנדרשים: <br>
+                        שם מלא <br>
+                        מספר טלפון <br>
+                        מספר תעודת זהות <br>
+                        שימוש בפרטים: <br>
+
+                        יצירת קשר: <br>
+                        הפרטים שתספק ישמשו את אביצח אלחייני ("הסוכן") לצורך
+                        יצירת קשר איתך, הצגת הצעות מחיר עבור ביטוח, ומתן שירותי
+                        ביטוח. <br>
+
+                        שיפור השירות: <br>
+                        הסוכנות עשויה להשתמש בפרטים שתספק לצורך שיפור השירות
+                        שלה, ניתוח נתונים סטטיסטיים, ופיתוח מוצרים ושירותים
+                        חדשים. <br>
+
+                        אבטחת מידע: <br>
+
+                        הסוכנות מתחייבת לשמור על פרטיותך ועל אבטחת המידע שתספק.
+                        פרטייך לא יועברו לצד שלישי ללא הסכמתך, אלא במקרים
+                        הקבועים בחוק. <br>
+
+                        הסכמה: <br>
+
+                        מילוי טופס זה מהווה הסכמה מצידך לתנאים המפורטים בתקנון
+                        זה. <br>
+
+                        זכות ביטול: <br>
+
+                        בכל עת, תוכל לבקש מהסוכנות למחוק את פרטייך מיד. <br>
+
+                        שינויים בתקנון:<br>
+
+                        הסוכנות רשאית לשנות את התקנון מעת לעת. שינויים בתקנון
+                        יפורסמו באתר האינטרנט של הסוכנות. <br>
+
+                        תקנון זה הינו נוסח כללי וניתן להתאימו לצרכים הספציפיים
+                        של סוכנות הביטוח. <br>
+                        תקנון זה מנוסח בלשון זכר אך מיועד לשני המינים. <br>
+                        הבהרות נוספות:<br>
+                        אי-אחריות: <br>
+                        הסוכנות אינה אחראית לנזק שייגרם לך כתוצאה משימוש בשירותי
+                        האתר, לרבות כתוצאה משימוש במידע שתספק. <br>
+                        תחום שיפוט: <br>
+                        הדין החל על תקנון זה ועל כל עניין הנובע ממנו או הקשור
+                        אליו הוא הדין הישראלי. סמכות השיפוט הבלעדית לכל עניין
+                        הנובע ממנו או הקשור אליו נתונה לבית המשפט המוסמך בישראל.
+                        <br>
+                        חשוב: <br>
+                        לפני מילוי טופס השארת פרטים, מומלץ לקרוא את התקנון
+                        בעיון.
+                    </p>
+                    <button onclick="confirmToTerms()"
+                        class="Sround submitBtn btn btn-dark w-100 py-3"
+                        type="submit">קראתי ואני מאשר</button>
+
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Footer End -->
 
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-
-    <div dir="rtl" id="ModalWrp">
-        <div id="modal">
-            <p onclick="CloseOpenMe('ModalWrp',false)" id="Exit">X</p>
-            <div id="modalContent">
-                <p class="termsofUseText">
-                                                        תקנון טופס השארת פרטים - בי-שור <br>
-
-                                    טופס זה נועד לאפשר לך להשאיר פרטים אישיים לצורך קבלת הצעות מחיר עבור ביטוח. <br>
-                                    פרטים הנדרשים: <br>
-                                    שם מלא <br>
-                                    מספר טלפון <br>
-                                    מספר תעודת זהות <br>
-                                    שימוש בפרטים: <br>
-
-                                    יצירת קשר: <br>
-                                    הפרטים שתספק ישמשו את סוכנות הביטוח בי-שור ("הסוכנות") לצורך יצירת קשר איתך, הצגת הצעות מחיר עבור ביטוח, ומתן שירותי ביטוח. <br>
-
-                                    שיפור השירות: <br>
-                                    הסוכנות עשויה להשתמש בפרטים שתספק לצורך שיפור השירות שלה, ניתוח נתונים סטטיסטיים, ופיתוח מוצרים ושירותים חדשים. <br>
-
-                                    אבטחת מידע: <br>
-
-                                    הסוכנות מתחייבת לשמור על פרטיותך ועל אבטחת המידע שתספק. פרטייך לא יועברו לצד שלישי ללא הסכמתך, אלא במקרים הקבועים בחוק. <br>
-
-                                    הסכמה: <br>
-
-                                    מילוי טופס זה מהווה הסכמה מצידך לתנאים המפורטים בתקנון זה. <br>
-
-                                    זכות ביטול: <br>
-
-                                    בכל עת, תוכל לבקש מהסוכנות למחוק את פרטייך מיד. <br>
-
-                                    שינויים בתקנון:<br>
-
-                                    הסוכנות רשאית לשנות את התקנון מעת לעת. שינויים בתקנון יפורסמו באתר האינטרנט של הסוכנות. <br>
-
-                                    תקנון זה הינו נוסח כללי וניתן להתאימו לצרכים הספציפיים של סוכנות הביטוח. <br>
-                                    תקנון זה מנוסח בלשון זכר אך מיועד לשני המינים. <br>
-                                    הבהרות נוספות:<br>
-                                    אי-אחריות: <br>
-                                    הסוכנות אינה אחראית לנזק שייגרם לך כתוצאה משימוש בשירותי האתר, לרבות כתוצאה משימוש במידע שתספק. <br>
-                                    תחום שיפוט: <br>
-                                    הדין החל על תקנון זה ועל כל עניין הנובע ממנו או הקשור אליו הוא הדין הישראלי. סמכות השיפוט הבלעדית לכל עניין הנובע ממנו או הקשור אליו נתונה לבית המשפט המוסמך בישראל. <br>
-                                    חשוב: <br>
-                                    לפני מילוי טופס השארת פרטים, מומלץ לקרוא את התקנון בעיון.
-                </p>
-                <button onclick="confirmToTerms()" class="Sround submitBtn btn btn-dark w-100 py-3" type="submit">קראתי ואני מאשר</button>
-
-            </div>
         </div>
 
-    </div>
-
-    <script>
+        <script>
         
         const CloseOpenMe=(id,flag,elm)=>{
             !flag?$(`#${id}`).fadeOut():$(`#${id}`).fadeIn();
@@ -809,21 +1107,23 @@
         }
     </script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-    <script src="lib/twentytwenty/jquery.event.move.js"></script>
-    <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script
+            src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        <script src="lib/twentytwenty/jquery.event.move.js"></script>
+        <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
 
 </html>
