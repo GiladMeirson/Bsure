@@ -1,9 +1,21 @@
 /********** Template CSS **********/
 :root {
   --primary: #9ac7ff;
+  --button-primary-bg: #17478b;
   --secondary: #cff2ff;
   --light: #e9f9ff;
   --dark: #091e3e;
+  --light-bg: #eef9ff;
+}
+.btn-primary {
+  background: var(--button-primary-bg);
+  border-color: var(--button-primary-bg);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  font-size: 18px;
+}
+.btn {
+  font-size: 18px;
 }
 
 h1,
@@ -169,7 +181,7 @@ h6,
 .navbar-brand {
   position: relative;
   padding: 8px 15px !important;
-  background: rgb(5 49 105 / 95%);
+  background: linear-gradient(45deg, #335fffd1, #91aefd6b);
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
@@ -249,13 +261,7 @@ h6,
 
 /* CTA Button in Navbar */
 .navbar .btn-primary {
-  background: #ffffff;
-  color: var(--primary);
-  border: 2px solid #ffffff;
-  font-weight: 600;
-  border-radius: 25px;
-  padding: 10px 25px !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
   transition: all 0.3s ease;
 }
 
@@ -435,7 +441,7 @@ h6,
 }
 
 .offer-text {
-  background: rgba(6, 163, 218, 0.85);
+  background: var(--light-bg);
 }
 
 .price-carousel .owl-nav {
@@ -449,7 +455,12 @@ h6,
   opacity: 0;
   transition: 0.5s;
 }
-
+#thisForm .text-white {
+  color: white !important;
+}
+#thisForm .appointment-form h1 {
+  color: black !important;
+}
 .price-carousel:hover .owl-nav {
   opacity: 1;
 }
@@ -480,7 +491,7 @@ h6,
 }
 
 .testimonial-carousel {
-  background: #d5f4ffd9;
+  background: #adc9ffd9;
 }
 
 .testimonial-carousel .owl-nav {
@@ -507,8 +518,14 @@ h6,
   border-radius: 2px;
   font-size: 22px;
   transition: 0.5s;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-
+.testimonial-carousel .owl-nav .owl-prev::before,
+.testimonial-carousel .owl-nav .owl-next::before {
+  color: black;
+}
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
   background: var(--secondary);
@@ -517,4 +534,17 @@ h6,
 .testimonial-carousel .owl-item img {
   width: 120px;
   height: 120px;
+}
+
+/* Ensure all h1 elements except those in the index page have white font color */
+:not([href*="index.html"]) h1 {
+  color: white !important;
+}
+
+/* Ensure all text inside elements with class 'info' is black */
+.info .shadow1 p,
+.info .shadow1 strong,
+.info .shadow1 li,
+.info .shadow1 h1 {
+  color: black !important;
 }

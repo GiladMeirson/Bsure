@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Besure - דף הבית</title>
+        <title>אביצח סוכן ביטוח - דף הבית</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Besure Insurence" name="description">
 
@@ -96,6 +96,8 @@
                         class="nav-item nav-link">משכנתא</a>
                     <a href="./insurenceCase.html"
                         class="nav-item nav-link">בדיקת תיק הביטוח</a>
+                    <a href="./teeth.html"
+                        class="nav-item nav-link">ביטוחי שיניים</a>
                     <!-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu m-0">
@@ -132,81 +134,299 @@
         <!-- Full Screen Search End -->
 
         <!-- Carousel Start -->
-        <div class="container-fluid p-0">
-            <div id="header-carousel" class="carousel slide carousel-fade"
-                data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <!-- <img class="w-100" src="img/carousel-1.jpg" alt="Image"> -->
-                        <video autoplay loop muted class="w-100"
-                            src="./video/bg1.mp4"></video>
-                        <div
-                            class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                            <div class="p-3" style="max-width: 900px;">
-                                <!-- <h5 class="text-white text-uppercase mb-3 animated slideInDown">אביצח אלחייני - פתרונות פיננסיים ופנסיונים</h5> -->
-                                <h1 dir="rtl"
-                                    class="display-1 text-white mb-md-4 animated zoomIn">לא
-                                    עוד תשלומים מיותרים, רק פתרונות חכמים. <br>
-                                    הצעד הראשון לביטחון שלכם - אביצח
-                                    אלחייני</h1>
-                                <!-- <a href="appointment.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
-                            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact Us</a> -->
+        <div style="
+    direction: rtl;
+    width: 100%;
+    height: 260px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    background-image: url('./img/handshake.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+">
+
+            <!-- Overlay gradient -->
+            <div style="
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to left,
+            rgba(55, 50, 90, 0.95) 0%,
+            rgba(55, 50, 90, 0.85) 45%,
+            rgba(55, 50, 90, 0.2) 70%,
+            rgba(55, 50, 90, 0) 100%
+        );
+    "></div>
+
+            <!-- Logo placeholder -->
+            <div style="
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+    ">
+                <!-- <img src="./img/logo3.png" alt="אביצה אלחייני"
+                    style="
+    height: 200px;
+    aspect-ratio: 1;
+    position: relative;
+    top: -75px;
+    left: -36px;
+        "> -->
+            </div>
+
+            <!-- Content -->
+            <div style="
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ffffff;
+        z-index: 2;
+        max-width: 420px;
+    ">
+
+                <h1 style="
+            margin: 0 0 12px 0;
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+        ">
+                    אביצח אלחייני
+                </h1>
+
+                <div style="
+                font-size: 25px;
+    margin-bottom: 20px;
+    color: #e6e6f0;
+    text-align: center;
+    position: relative;
+    left: 11px;
+    font-weight: 700;
+        ">
+                    <span style="color: gold;">✓</span> מקצועיות &nbsp;&nbsp;
+                    <span style="color: gold;">✓</span> אמינות &nbsp;&nbsp;
+                    <span style="color: gold;">✓</span> ניסיון
+                </div>
+
+                <a href="#Thisform"
+                    style="
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #17478b;
+              box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+           "
+                    onmouseover="this.style.backgroundColor='#423b7a'"
+                    onmouseout="this.style.backgroundColor='#2f2a5a'">
+                    לחצו לקבלת הצעה
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Carousel End -->
+        <!-- Partners Slider Start -->
+        <div class="container-fluid py-5 bg-light">
+            <div class="container">
+                <div class="section-title text-center mb-5">
+                    <h5
+                        class="position-relative d-inline-block text-primary text-uppercase">השותפים
+                        שלנו</h5>
+                    <h2 class="display-6 mb-0">אנחנו עובדים עם החברות
+                        המובילות</h2>
+                </div>
+                <div class="partners-slider-wrapper">
+                    <div class="partners-slider">
+                        <div class="partners-track">
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider0-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider1-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider2-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider3-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider4-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider5-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <!-- Duplicate for seamless loop -->
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider0-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider1-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider2-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider3-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider4-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
+                            </div>
+                            <div class="partner-item">
+                                <img
+                                    src="./img/slider/islider5-removebg-preview.png"
+                                    alt="Partner" class="img-fluid">
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-        <!-- Carousel End -->
-
+        <!-- Partners Slider End -->
         <!-- Banner Start -->
-        <div style="text-align: center;" id="bannerWrap" dir="rtl"
-            class="container-fluid banner mb-5">
+        <!-- About Start -->
+        <div dir="rtl" class="aboutus-section container-fluid py-5 wow fadeInUp"
+            data-wow-delay="0.1s">
             <div class="container">
-                <div class="row gx-0">
-                    <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
-                        <div id="bannerimg1"
-                            class="bannDivs bg-primary d-flex2 d-flex flex-column p-5">
-                            <img class="imgNum" src="./img/headphones.png" alt>
-
-                            <h3 style="text-align: center;"
-                                class="text-white mb-3">צור קשר עוד היום לקבלת
-                                ייעוץ חינם!</h3>
-                            <p class="text-white">מלא את פרטיך ותשוחח עם נציג.
-                                <br>צור קשר עוד היום לקבלת ייעוץ חינם!</p>
+                <!-- Mobile-First Design -->
+                <div class="aboutus-wrapper">
+                    <!-- Profile Card -->
+                    <div class="aboutus-profile-card wow fadeInUp"
+                        data-wow-delay="0.2s">
+                        <div class="profile-image-container">
+                            <img src="img/nicetomeetyou.png" alt="אביצח אלחייני"
+                                class="profile-image">
+                            <div class="profile-overlay"></div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-                        <div id="bannerimg2"
-                            class="bannDivs bg-dark d-flex2 d-flex flex-column p-5">
-                            <img class="imgNum" src="./img/solutions.png" alt>
-                            <h3 class="text-white mb-3">פתרונות ביטוח חכמים</h3>
-                            <p class="text-white">חסוך כסף וקבל את הכיסוי הטוב
-                                ביותר.
-                                אני יודע שביטוח יכול להיות עסק יקר.
-                                לכן, אני מציע לך פתרונות ביטוח חכמים שיאפשרו לך
-                                לחסוך כסף ולקבל את הכיסוי הטוב ביותר.</p>
 
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
-                        <div id="bannerimg3"
-                            class="bannDivs bg-secondary d-flex2 d-flex flex-column p-5">
-                            <img class="imgNum" src="./img/process.png" alt>
-                            <h3 class="text-white mb-3">מימוש מקסימלי של
-                                זכויותיך</h3>
-                            <p class="text-white">בדיקת תיק ביטוח מקצועית.
-                                אני מציע לך שירות בדיקת תיק ביטוח מקצועית,
-                                שתאפשר לך לוודא שאתה מקבל את הכיסוי הטוב ביותר.
-                                אני אבחן את תיק הביטוח שלך ואספק לך פתרון שמתאים
-                                עבורך.</p>
+                        <div class="profile-content">
+                            <div class="profile-header">
+                                <span class="profile-label">נעים להכיר</span>
+                                <h1 class="profile-name">אביצח אלחייני</h1>
+                                <h4 class="profile-title">סוכן ביטוח אישי</h4>
+                            </div>
 
+                            <div class="profile-description">
+                                <p class="main-text">
+                                    <strong>המטרה שלי היא אחת</strong> - לעזור
+                                    לכם לבנות ביטחון כלכלי אמיתי,
+                                    כזה שמותאם בדיוק לצרכים ולחלומות שלכם.
+                                </p>
+                                <p class="secondary-text">
+                                    אני מלווה משפחות, יחידים ועסקים בבחירת
+                                    פתרונות ביטוח חכמים
+                                    בצורה מקצועית, שקופה ואכפתית.
+                                </p>
+                                <div class="highlight-box">
+                                    <i class="fas fa-star highlight-icon"></i>
+                                    <p>
+                                        <strong>אצלי לא תמצאו פתרונות
+                                            מדף.</strong> כל לקוח מקבל ליווי
+                                        אישי,
+                                        בדיקה יסודית והתאמה מלאה כדי לוודא
+                                        שהכיסוי שאתם בוחרים היום באמת יגן עליכם
+                                        כשצריך.
+                                    </p>
+                                </div>
+                                <p class="expertise-text">
+                                    אני מתמחה בביטוחי חיים, בריאות, משכנתאות,
+                                    פנסיוני ועוד.
+                                </p>
+                            </div>
+
+                            <!-- Features Grid -->
+                            <div class="features-grid">
+                                <div class="feature-item wow zoomIn"
+                                    data-wow-delay="0.3s">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h5>אלפי לקוחות מרוצים</h5>
+                                        <p>ניסיון מוכח בשטח</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-item wow zoomIn"
+                                    data-wow-delay="0.4s">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-award"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h5>שירות הטוב ביותר</h5>
+                                        <p>מקצועיות ללא פשרות</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-item wow zoomIn"
+                                    data-wow-delay="0.5s">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h5>זמין 24/7</h5>
+                                        <p>תמיד כאן בשבילכם</p>
+                                    </div>
+                                </div>
+
+                                <div class="feature-item wow zoomIn"
+                                    data-wow-delay="0.6s">
+                                    <div class="feature-icon">
+                                        <i class="fas fa-tags"></i>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h5>במחיר הטוב ביותר</h5>
+                                        <p>שווי מקסימלי</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Call to Action -->
+                            <div class="cta-section">
+                                <p class="cta-text">אני מזמין אותכם להצטרף אליי
+                                    לתהליך אישי, מקצועי ומשמעותי.</p>
+                                <a href="#Thisform" class="btn-cta wow pulse"
+                                    data-wow-delay="0.7s">
+                                    <span>צרו איתנו קשר</span>
+                                    <i class="fas fa-arrow-left"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- About End -->
         <!-- Banner Start -->
 
         <!-- Appointment Start -->
@@ -310,87 +530,6 @@
             </div>
         </div>
         <!-- Appointment End -->
-
-        <!-- Partners Slider Start -->
-        <div class="container-fluid py-5 bg-light">
-            <div class="container">
-                <div class="section-title text-center mb-5">
-                    <h5
-                        class="position-relative d-inline-block text-primary text-uppercase">השותפים
-                        שלנו</h5>
-                    <h2 class="display-6 mb-0">אנחנו עובדים עם החברות
-                        המובילות</h2>
-                </div>
-                <div class="partners-slider-wrapper">
-                    <div class="partners-slider">
-                        <div class="partners-track">
-                            <div class="partner-item">
-                                <img
-                                    src="./img/slider/islider0-removebg-preview.png"
-                                    alt="Partner" class="img-fluid">
-                            </div>
-                            <div class="partner-item">
-                                <img
-                                    src="./img/slider/islider1-removebg-preview.png"
-                                    alt="Partner" class="img-fluid">
-                            </div>
-                            <div class="partner-item">
-                                <img
-                                    src="./img/slider/islider2-removebg-preview.png"
-                                    alt="Partner" class="img-fluid">
-                            </div>
-                            <div class="partner-item">
-                                <img
-                                    src="./img/slider/islider3-removebg-preview.png"
-                                    alt="Partner" class="img-fluid">
-                            </div>
-                            <div class="partner-item">
-                                <img
-                                    src="./img/slider/islider4-removebg-preview.png"
-                                    alt="Partner" class="img-fluid">
-                            </div>
-                            <div class="partner-item">
-                                <img
-                                    src="./img/slider/islider5-removebg-preview.png"
-                                    alt="Partner" class="img-fluid">
-                            </div>
-                            <!-- Duplicate for seamless loop -->
-                            <div class="partner-item">
-                                <img
-                                    src="./img/slider/islider0-removebg-preview.png"
-                                    alt="Partner" class="img-fluid">
-                            </div>
-                            <div class="partner-item">
-                                <img
-                                    src="./img/slider/islider1-removebg-preview.png"
-                                    alt="Partner" class="img-fluid">
-                            </div>
-                            <div class="partner-item">
-                                <img
-                                    src="./img/slider/islider2-removebg-preview.png"
-                                    alt="Partner" class="img-fluid">
-                            </div>
-                            <div class="partner-item">
-                                <img
-                                    src="./img/slider/islider3-removebg-preview.png"
-                                    alt="Partner" class="img-fluid">
-                            </div>
-                            <div class="partner-item">
-                                <img
-                                    src="./img/slider/islider4-removebg-preview.png"
-                                    alt="Partner" class="img-fluid">
-                            </div>
-                            <div class="partner-item">
-                                <img
-                                    src="./img/slider/islider5-removebg-preview.png"
-                                    alt="Partner" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Partners Slider End -->
 
         <!-- Service Start -->
         <div dir="rtl" class="container-fluid py-5 wow fadeInUp "
@@ -558,68 +697,6 @@
             </div>
         </div>
         <!-- Service End -->
-
-        <!-- About Start -->
-        <div dir="rtl" class="aboutus container-fluid py-5 wow fadeInUp"
-            data-wow-delay="0.1s">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-7">
-                        <div class="section-title mb-4">
-                            <h5
-                                class="position-relative d-inline-block text-primary2 text-uppercase">נעים
-                                להכיר</h5>
-                            <h1 class="display-5 mb-0">אביצח אלחייני</h1>
-                        </div>
-                        <h4 class="text-body2 fst-italic mb-4">סוכן ביטוח
-                            אישי</h4>
-                        <p style="color: #151515;" class="mb-4"> המטרה שלי היא
-                            אחת - לעזור לכם לבנות ביטחון כלכלי אמיתי כזה שמותאם
-                            בדיוק לצרכים ולחלומות שלכם <br> אני מלווה משפחות,
-                            יחידים ועסקים בבחירת פתרונות ביטוח חכמים בצורה
-                            מקצועית שקופה ואכפתית. <br><br>אצלי לא תמצאו פתרונות
-                            מדף, כל לקוח מקבל ליווי אישי, בדיקה יסודית והתאמה
-                            מלאה כדי לוודא שהכיסוי שאתם בוחרים היום באמת יגן
-                            עליכם כשצריך <br>אני מתמחה בביטוחי חיים, בריאות,
-                            משכנתאות, פנסיוני ועוד. <br><br>אני מזמין אותכם
-                            להצטרף אליי לתהליך אישי, מקצועי ומשמעותי.</p>
-                        <div class="row g-3">
-                            <div class="col-sm-6 wow zoomIn"
-                                data-wow-delay="0.3s">
-                                <h5 class="mb-3"><i
-                                        class="fa fa-check-circle text-primary2 me-3"></i>
-                                    אלפי לקוחות מרוצים </h5>
-                                <h5 class="mb-3"><i
-                                        class="fa fa-check-circle text-primary2 me-3"></i>
-                                    שירות הטוב ביותר </h5>
-                            </div>
-                            <div class="col-sm-6 wow zoomIn"
-                                data-wow-delay="0.6s">
-                                <h5 class="mb-3"><i
-                                        class="fa fa-check-circle text-primary2 me-3"></i>
-                                    אני כאן 24/7</h5>
-                                <h5 class="mb-3"><i
-                                        class="fa fa-check-circle text-primary2 me-3"></i>
-                                    במחיר הטוב ביותר</h5>
-                            </div>
-                        </div>
-                        <a href="#Thisform"
-                            class="btn Sround btn-primary py-3 px-5 mt-4 wow zoomIn"
-                            data-wow-delay="0.6s">צרו איתנו קשר</a>
-                    </div>
-                    <div class="col-lg-5" style="min-height: 600px;">
-                        <div class="position-relative h-100">
-                            <img
-                                class="position-absolute Sround w-100 h-100 rounded wow zoomIn"
-                                data-wow-delay="0.9s"
-                                src="img/nicetomeetyou.png"
-                                style="object-fit: cover;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
 
         <!-- Offer Start -->
         <!-- <div class="container-fluid bg-offer my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -955,6 +1032,9 @@
                                 תיק הביטוח</a>
                             <a class="text-light" href="./Mort&&gage.html"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>משכנתאות</a>
+                            <a class="text-light" href="./teeth.html"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>ביטוחי
+                                שיניים</a>
                         </div>
                     </div>
 
@@ -968,28 +1048,13 @@
                         <p class="mb-0"><i
                                 class="bi bi-telephone text-primary me-2"></i>
                             <a href="tel:052-5546133"></a>052-5546133</p>
+                        <a
+                            style="margin-top: 15px; border-radius: 15px !important ;"
+                            class="btn btn-lg btn-primary btn-lg-square rounded me-2"
+                            href="#"><i
+                                class="fab fa-facebook-f fw-normal"></i></a>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <h3 class="text-white mb-4">Follow Us</h3>
-                        <div class="d-flex">
-                            <a
-                                class="btn btn-lg btn-primary btn-lg-square rounded me-2"
-                                href="#"><i
-                                    class="fab fa-twitter fw-normal"></i></a>
-                            <a
-                                class="btn btn-lg btn-primary btn-lg-square rounded me-2"
-                                href="#"><i
-                                    class="fab fa-facebook-f fw-normal"></i></a>
-                            <a
-                                class="btn btn-lg btn-primary btn-lg-square rounded me-2"
-                                href="#"><i
-                                    class="fab fa-linkedin-in fw-normal"></i></a>
-                            <a
-                                class="btn btn-lg btn-primary btn-lg-square rounded"
-                                href="#"><i
-                                    class="fab fa-instagram fw-normal"></i></a>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
